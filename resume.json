@@ -1,0 +1,193 @@
+{
+  "meta": {
+    "theme": "Elegant"
+  },
+  "basics": {
+    "name": "John Perrin",
+    "label": "Excellence from the future, TODAY.",
+    "image": "https://user-images.githubusercontent.com/93789056/150057011-5d0e512a-02dd-476c-b40a-7f98e489499c.JPG",
+    "summary": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
+    "email": "perrin.john@gmail.com",
+    "location": {
+      "address": "Bearspaw",
+      "city": "Calgary",
+      "countryCode": "Canada"
+    },
+    "profiles": [
+      {
+        "url": "https://www.linkedin.com/in/johnperrinpeng/",
+        "username": "JohnPerrinPEng",
+        "network": "LinkedIn"
+      },
+      {
+        "url": "https://github.com/JPProfessional",
+        "username": "JPProfessional",
+        "network": "github"
+      }
+    ]
+  },
+  "education": [
+    {
+      "endDate": "1997-05-01",
+      "startDate": "1993-09-01",
+      "area": "Mechanical Engineering",
+      "studyType": "Bachelors of Science (B.Sc.)",
+      "institution": "University of Alberta",
+      "url": "www.ualberta.ca"
+    },
+    {
+      "endDate": "1993-05-01",
+      "startDate": "1991-09-01",
+      "area": "Engineering",
+      "studyType": "Certificate of Applied Science (C.A.S.)",
+      "institution": "Acadia University",
+      "url": "www.acadiau.ca"
+    }
+  ],
+  "references": [],
+  "skills": [
+    {
+      "name": "Leadership",
+      "keywords": ["Strategic Thinking", "Empower Team Members", "Effective Communication"]
+    },
+    {
+      "name": "Business Devlopment",
+      "keywords": ["Closing Profitable Deals", "Market Assessment", "Stakeholder Engagement"]
+    },
+     {
+      "name": "Continuous Improvement",
+      "keywords": ["Goalsetting", "Change Management", "Ongoing Assessment"]
+    },
+     {
+      "name": "Engineering",
+      "keywords": ["Industrial Automation", "Petroleum Reservoir Assessment", "Machine Design"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Pathfinder Award",
+      "awarder": "Scouts Canada and Governor General of Canada"
+    },
+    {
+      "title": "Man of The Year",
+      "awarder": "Canadian Progress Club - Calgary Downtown"
+    }
+  ],
+  "work": [
+    {
+      "summary": "Induce Digital Transformation Journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.",
+      "website": "www.zedisolutions.com",
+      "name": "Emerson Automation Solutions",
+      "location": "Calgary",
+      "position": "Director of International Business Development for Zedi Cloud SCADA (IoT SaaS)",
+      "startDate": "2020-09-01",
+      "endDate": "2021-10-01",
+      "highlights": [
+        "Increased: 6X Named pursuit funnel in 12 Months (Total potential Contract Value approximately USD25M)",
+        "Selected, Trained and Supported: 20 Total IoT SaaS Subject Matter Experts in 12 Months via MS Teams",
+        "Delivered: IoT SaaS Sales Awareness Training to ~1000 Emerson Business Development and Partner Staff around the world.",
+        "Established: Meaningful working relationships with Regional Executives and key Business Development resources around the world without the opportunity to meet in person."
+        ]
+    },
+    {
+      "summary": "Achieved an across the board KPI improvement of Automation project Implementation and Support",
+      "website": "www.zedisolutions.com",
+      "name": "Emerson Automation Solutions",
+      "location": "Calgary",
+      "position": "Director of Automation Engineering for Zedi Cloud SCADA SaaS (IoT SaaS)",
+      "startDate": "2019-05-01",
+      "endDate": "2020-09-30",
+      "highlights": [
+        "Create, deploy, and direct continuous improvement of a “Perfect Execution” approach to Zedi Automation Engineering",
+        "Initiate, select, oversee training and integrate personnnel from Emerson’s Best Cost Center location in Pune, India into the North America based Automation Engineering Team.",
+        "APEGA Responsible Member for Automation Engineering under Emerson Electric Canada Limited (EECL) Permit to Practice."
+        ]
+    },
+    {
+      "summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.",
+      "website": "www.stratumreservoir.com",
+      "name": "Weatherford (now Stratum Reservoir)",
+      "location": "Calgary",
+      "position": "Operations Manager of Laboratories and Subsurface Consulting",
+      "startDate": "2017-04-01",
+      "endDate": "2018-06-21",
+      "highlights": [
+        "Improved P&L: Through a no holds barred approach to topline revenue generation and variable-cost control, EBITDA moved from heavily negative through to neutral or slightly positive.",
+        "Cultural Change: Focusing on team and personal accountability, I led an increase in compliance and process discipline reflected in improved QHSSE KPIs and COR Audit performance.",
+        "Innovation: Shepherded operations team in the engineering development of techniques and equipment for a 10 client, multi-million-dollar Lean Gas Cycling Joint Industry Partnership."
+        ]
+    },
+    {
+      "summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.",
+      "website": "www.enerplus.com",
+      "name": "Enerplus",
+      "location": "Calgary",
+      "position": "Staff Petrophysical Engineer",
+      "startDate": "2012-03-01",
+      "endDate": "2015-06-15",
+      "highlights": [
+        "Altered development plan for key corporate asset by positive identification of dual natural fracture systems through integration of Wireline Imaging, Core Study and Geophysical Analysis.",
+        "Lead and/or performed expert evaluation of conventional and unconventional basin systems across North America including Bakken, Marcellus, Duvernay and Montney",
+        "Lead expert petrophysical assessment for M&A opportunities in conjuntion with New Ventures Team"
+        ]
+    },
+    {
+      "summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.",
+      "name": "Calmena Energy Services",
+      "location": "Calgary",
+      "position": "Microseismic Business Development Manager",
+      "startDate": "2010-12-15",
+      "endDate": "2012-03-01"
+    },
+    {
+      "summary": "Recruited as Vice President – North and South America for Sensornet Limited then promoted to Strategic Relationships Manager and Regional Manager Canada after Tendeka consolidation within Kenda Capital aka Shell Technology Ventures Fund group of companies.",
+      "name": "Sensornet-Tendeka",
+      "location": "Calgary",
+      "position": "Vice President NSA, Regional Manager Canada & Strategic Relationship Manager NSA",
+      "website": "www.tendeka.com",
+      "startDate": "2008-04-01",
+      "endDate": "2012-03-01"
+    },
+    {
+      "summary": "Recruited by former clients in the Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.",
+      "name": "ConocoPhillips",
+      "location": "Calgary",
+      "position": "Senior Petrophysical Engineer",
+      "website": "www.conocophillips.com",
+      "startDate": "2007-05-01",
+      "endDate": "2008-04-01"
+    },
+    {
+      "summary": "Joined Schlumberger as a Wireline Field Engineer Trainee and progressed through the ranks to General Field Engineer in Charge over 4 years in Saudi Arabia, Kuwait and United Arab Emirates. Subsequently transferred to Calgary in Wireline Sales and finally promoted to Canada Recruiter for one year.",
+      "name": "Schlumberger",
+      "location": "Saudi Arabia, Kuwait, United Arab Emirates and Canada",
+      "position": "Field Engineer, Sales and Recruiting",
+      "website": "www.slb.com",
+      "startDate": "2000-07-01",
+      "endDate": "2006-12-31"
+    },
+    {
+      "summary": "After a successful internship at Chalk River National Laboratories I joined Reactor Services to research, build, inspect and repair CANDU Nuclear Fuel Channel Components.",
+      "name": "Atomic Energy Canada Limited",
+      "location": "Canada and Romania",
+      "position": "Reactor Services Engineer",
+      "website": "www.aecl.ca",
+      "startDate": "1997-06-01",
+      "endDate": "2000-07-01"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Golf"
+    },
+    {
+      "name": "Sailing"
+    },
+    {
+      "name": "Comedy"
+    },
+    {
+      "name": "Volunteering"
+    }
+  ]
+}

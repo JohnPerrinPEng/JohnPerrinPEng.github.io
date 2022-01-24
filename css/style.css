@@ -1,0 +1,100 @@
+/* PRIMARY UPPERCASE DISPLAY HEADLINE, TITLES + NUMBERS = TITILLIUM WEB REGULAR, SEMIBOLD & BOLD = 
+PRIMARY INFORMATIONAL + PARAGRAPH = Roboto Light & Regular
+ALTERNATE INFORMATIONAL = Titillium Web
+MIXED-CASE HEADINGS + TITLES = D-Din Bold
+ALTERNATE UPPERCASE HEADINGS, TITLES + LABELS= D-DIN REGULAR & BOLD
+LOWERCASE WEB URL = d-din expanded bold */
+
+:root {
+    --brand-blue: #51a3d6;
+    --brand-gray: #5b5b5b;
+    --accent-dark: #0f415c;
+    --brand-blue-dark: #4295cc;
+    --accent-light: #A4D9F5;
+    --background-blue: #EAF7FE;
+    --background-gray: #EFEFEF;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: var(--brand-gray);
+    background-color: var(--background-blue);
+}
+
+h5 {
+    font-family: TITILLIUM WEB SEMIBOLD, Sans;
+    text-transform: uppercase;
+}
+h6 {
+    font-family: D-DIN REGULAR, Sans;
+}
+
+.link {
+    color: var(--accent-dark)
+}
+
+
+.sectionTitle {
+    font-family: TITILLIUM WEB REGULAR , D-DIN REGULAR, ;
+}
+
+.sectionTitle {
+    font-family: D-DIN REGULAR,sans-serif;
+    font-size: 2em;
+    width: 25vw;
+}
+.expCompanyContainer {
+    display: flex;
+    flex-flow: row;
+}
+.expCompanyTextContainer {
+    flex-flow: column;
+    width: 75%;
+    padding: 2px;
+}
+.expCompanyLogoContainer {
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid #0f415c;
+}
+.companyLogoImage {
+    max-width: 50%;
+    max-height: 75%;
+    display:inline-block;
+}
+.expCompanyHref{
+    vertical-align: center;
+}
+.expCompanySummaryRow {
+    font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    padding: 2px;
+}
+.expPostionsContainer {
+    flex-flow: column;
+    width: 100%;
+    padding: 2px;
+}
+.expPositionSummaryRow {
+    font-family: D-Din Bold, sans-serif;
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+}
+.expPositionContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+}
+.name {
+    width: 50%;
+    font-size: 2em;
+}
+.positon {
+    width: 50%;
+    font-size: 1em;
+}
