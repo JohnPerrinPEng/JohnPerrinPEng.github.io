@@ -46,55 +46,49 @@ h6 {
 .expCompanyContainer {
     display: flex;
     flex-flow: row;
+    margin: 4px;
 }
 .expCompanyTextContainer {
     flex-flow: column;
     width: 75%;
     padding: 2px;
+    border-left: 2px solid #4295cc;
 }
 .expCompanyLogoContainer {
-    display: flex;
     width: 25%;
-    justify-content: center;
+    height: 100%;
+    display: flex;  
     align-items: center;
-    border-right: 2px solid #0f415c;
+    justify-content: center;
 }
 .companyLogoImage {
     max-width: 50%;
-    max-height: 75%;
-    display:inline-block;
-}
-.expCompanyHref{
-    vertical-align: center;
+    /* max-height: 2em; */
+    max-width: 7em;
+    /* display:inline-block; */
 }
 .expCompanySummaryRow {
     font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
+    font-size: 1em;
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
-    padding: 2px;
-}
-.expPostionsContainer {
-    flex-flow: column;
-    width: 100%;
     padding: 2px;
 }
 .expPositionSummaryRow {
-    font-family: D-Din Bold, sans-serif;
+    width: 95%;
+    font-family: D-DIN BOLD, sans-serif;
+    font-size: 1em;
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
+    padding: 2px;
+    /* justify-content: right; */
 }
-.expPositionContainer {
-    display: flex;
-    flex-flow: row;
-    justify-content: space-between;
-}
+
 .name {
     width: 50%;
-    font-size: 2em;
 }
 .positon {
     width: 50%;
-    font-size: 1em;
 }
