@@ -22,11 +22,16 @@ body {
 }
 
 h5 {
-    font-family: TITILLIUM WEB SEMIBOLD, Sans;
+    font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
+    font-size: 10em;
     text-transform: uppercase;
 }
 h6 {
     font-family: D-DIN REGULAR, Sans;
+}
+
+p {
+    margin: 2px;
 }
 
 .link {
@@ -35,18 +40,24 @@ h6 {
 
 
 .sectionTitle {
-    font-family: TITILLIUM WEB REGULAR , D-DIN REGULAR, ;
-}
-
-.sectionTitle {
-    font-family: D-DIN REGULAR,sans-serif;
+    font-family: TITILLIUM WEB REGULAR , sans-serif;
     font-size: 2em;
-    width: 25vw;
+    width: 25;
 }
 .expCompanyContainer {
     display: flex;
     flex-flow: row;
     margin: 4px;
+}
+.expCompanyLogoContainer {
+    width: 20%;
+    height: inherit;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+.companyLogoImage {
+    max-width: 10em;
 }
 .expCompanyTextContainer {
     flex-flow: column;
@@ -54,29 +65,16 @@ h6 {
     padding: 2px;
     border-left: 2px solid #4295cc;
 }
-.expCompanyLogoContainer {
-    width: 25%;
-    height: 100%;
-    display: flex;  
-    align-items: center;
-    justify-content: center;
-}
-.companyLogoImage {
-    max-width: 50%;
-    /* max-height: 2em; */
-    max-width: 7em;
-    /* display:inline-block; */
-}
 .expCompanySummaryRow {
     font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
-    font-size: 1em;
+    font-size: 1.5em;
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
     padding: 2px;
 }
 .expPositionSummaryRow {
-    width: 95%;
+    width: inherit;
     font-family: D-DIN BOLD, sans-serif;
     font-size: 1em;
     display: flex;
@@ -89,6 +87,6 @@ h6 {
 .name {
     width: 50%;
 }
-.positon {
+.positonDetailPosition {
     width: 50%;
 }
