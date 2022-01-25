@@ -105,20 +105,20 @@ const resumeData = {
       {"name": "Schlumberger", "position": "Senior Field Engineer", "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2002-09-15", "endDate": "2003-02-01"},
       {"name": "Schlumberger", "position": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-02-01", "endDate": "2004-10-01"},
       {"name": "Schlumberger", "position": "General Field Engineer", "Summary": "Promoted to General Field Enginer after fulfill GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-12-01", "endDate": "2004-10-01"},
-      {"name": "Schlumberger", "position": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Canada, Calgary", "startDate": "2004-10-01", "endDate": "2006-04-01"},
-      {"name": "Schlumberger", "position": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs. by OFS G", "location": "Canada, Calgary", "startDate": "2006-04-01", "endDate": "2006-12-12"},
-      {"name": "ConocoPhillips", "position": "Petrophysicist", "Summary": "Recruited by former clients in the Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.", "location": "Canada, Calgary", "startDate": "2007-05-01", "endDate": "2008-04-20"},
-      {"name": "Tendeka", "position": "Vice President North and South America for Senornet", "Summary": "Recruited as Vice President North and South America for Sensornet Limited.", "location": "Canada, Calgary", "startDate": "2008-05-01", "endDate": "2009-09-01"},
-      {"name": "Tendeka", "position": "Regional Manager Canada and Strategic Relationship Manager", "Summary": "Promoted to Strategic Relationship Manager and Regional Manager Canada on the combination of Sensornet, SwellFifix and WellTechnogolgy by Kenda Capital in June 2009..", "location": "Canada, Calgary", "startDate": "2009-09-01", "endDate": "2010-12-13"},
-      {"name": "Calmena", "position": "Microseismic Business Development Manager", "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.", "location": "Canada, Calgary", "startDate": "2010-12-13", "endDate": "2012-12-18"},
-      {"name": "Enerplus Corporation", "position": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Canada, Calgary", "startDate": "2012-12-18", "endDate": "2015-06-02"},
-      {"name": "Weatherford now Stratum Reservoir", "position": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Canada, Calgary", "startDate": "2017-04-01", "endDate": "2018-06-21"},
-      {"name": "DIKUW Incorporated", "position": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Canada, Calgary", "startDate": "2019-03-01", "endDate": "2022-01-24"},
-      {"name": "DIKUW Incorporated", "position": "Consulting Engagement to CEDA Technical Center of Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary “Comprehensive Framework for Field Operations Project Management and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Canada, Calgary", "startDate": "2019-03-01", "endDate": "2019-09-15"},
-      {"name": "Emerson Automation Solutions", "position": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Canada, Calgary", "startDate": "2019-05-01", "endDate": "2019-08-01"},
-      {"name": "Emerson Automation Solutions", "position": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Canada, Calgary", "startDate": "2019-08-01", "endDate": "2020-02-01"},
-      {"name": "Emerson Automation Solutions", "position": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Canada, Calgary", "startDate": "2020-02-01", "endDate": "2020-10-01"},
-      {"name": "Emerson Automation Solutions", "position": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Canada, Calgary", "startDate": "2020-10-01", "endDate": "2021-09-30"},
+      {"name": "Schlumberger", "position": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Calgary, Canada", "startDate": "2004-10-01", "endDate": "2006-04-01"},
+      {"name": "Schlumberger", "position": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs. by OFS G", "location": "Calgary, Canada", "startDate": "2006-04-01", "endDate": "2006-12-12"},
+      {"name": "ConocoPhillips", "position": "Petrophysicist", "Summary": "Recruited by former clients in the Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.", "location": "Calgary, Canada", "startDate": "2007-05-01", "endDate": "2008-04-20"},
+      {"name": "Tendeka", "position": "Vice President North and South America for Senornet", "Summary": "Recruited as Vice President North and South America for Sensornet Limited.", "location": "Calgary, Canada", "startDate": "2008-05-01", "endDate": "2009-09-01"},
+      {"name": "Tendeka", "position": "Regional Manager Canada and Strategic Relationship Manager", "Summary": "Promoted to Strategic Relationship Manager and Regional Manager Canada on the combination of Sensornet, SwellFifix and WellTechnogolgy by Kenda Capital in June 2009..", "location": "Calgary, Canada", "startDate": "2009-09-01", "endDate": "2010-12-13"},
+      {"name": "Calmena", "position": "Microseismic Business Development Manager", "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.", "location": "Calgary, Canada", "startDate": "2010-12-13", "endDate": "2012-12-18"},
+      {"name": "Enerplus Corporation", "position": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, Canada", "startDate": "2012-12-18", "endDate": "2015-06-02"},
+      {"name": "Weatherford now Stratum Reservoir", "position": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, Canada", "startDate": "2017-04-01", "endDate": "2018-06-21"},
+      {"name": "DIKUW Incorporated", "position": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2022-01-24"},
+      {"name": "DIKUW Incorporated", "position": "Consulting Engagement to CEDA Technical Center of Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary “Comprehensive Framework for Field Operations Project Management and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
+      {"name": "Emerson Automation Solutions", "position": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-05-01", "endDate": "2019-08-01"},
+      {"name": "Emerson Automation Solutions", "position": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-08-01", "endDate": "2020-02-01"},
+      {"name": "Emerson Automation Solutions", "position": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, Canada", "startDate": "2020-02-01", "endDate": "2020-10-01"},
+      {"name": "Emerson Automation Solutions", "position": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Calgary, Canada", "startDate": "2020-10-01", "endDate": "2021-09-30"},
       ]
 }
 
@@ -213,6 +213,7 @@ var workSummarySorted = workSummary.sort();
 workSummary = workSummarySorted;
 delete workSummary.startDate;
 delete workSummary.endDate;
+
 var expTitle = document.createElement('h5');
 Object.assign( expTitle, {
   className: "sectionTitle",
@@ -225,7 +226,6 @@ expContainer.appendChild(expTitle);
 
 //Create Exerience DOM
 workSummary.forEach( (summary) => {
-  
   const companyNameCollapsed = summary.name.split(" ").join("");
 
   //Create company container with logo
@@ -267,10 +267,11 @@ workSummary.forEach( (summary) => {
   });
   
   //Convert to prettyDates for display
-  summary.endDate = prettyDates(summary.endDate);
-  summary.startDate = prettyDates(summary.startDate);
+  delete summary.endDate; //= prettyDates(summary.endDate);
+  delete summary.startDate; // = prettyDates(summary.startDate);
 
   //Create expDetail
+  console.log({summary});
   Object.entries(summary).forEach(detail => {
     const detailType = `expDetail${detail[0].charAt(0).toUpperCase()}${detail[0].slice(1)}`;
     eval(`var ${detailType} = document.createElement('p')`);
@@ -308,11 +309,10 @@ workSummary.forEach( (summary) => {
       // Build details to go inside summary row
       positionSummaryFields = {
         "position": summary.position,
-
-        "startDate": prettyDates(summary.startDate),
-        "endDate": prettyDates(summary.endDate),
-        "durationPhrase": summary.durationPhrase
-      }
+        "location": summary.location,
+        "dates": `${prettyDates(summary.startDate)} to ${prettyDates(summary.endDate)}`,
+        "duration": summary.durationPhrase 
+        }
       Object.entries(positionSummaryFields).forEach((positionDetail) => {
         const detailType = `positonDetail${positionDetail[0].charAt(0).toUpperCase()}${positionDetail[0].slice(1)}`;
         eval(`var ${detailType} = document.createElement('p')`);
