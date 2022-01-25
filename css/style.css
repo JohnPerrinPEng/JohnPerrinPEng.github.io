@@ -42,7 +42,8 @@ p {
 .sectionTitle {
     font-family: TITILLIUM WEB REGULAR , sans-serif;
     font-size: 2em;
-    width: 25;
+    width: 20%;
+    text-align: center;
 }
 .expCompanyContainer {
     display: flex;
