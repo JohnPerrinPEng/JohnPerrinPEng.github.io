@@ -161,10 +161,31 @@ var logoImages = [
   {"name": "UniversityofAlberta", "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png", "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html"},{"name": "AcadiaUniversity", "file": "img/logoAcadiaUniversityEngineeringTranparent.png", "url": "https://engineering.acadiau.ca/Welcome.html"},{"name": "AtomicEnergyCanadaLimited", "file": "img/logoAECL-Stacked-BlueTranparent.png", "url": "https://www.aecl.ca"},{"name": "Schlumberger", "file": "img/logoSchlumbergerTranparent.png", "url": "https://www.slb.com"},{"name": "ConocoPhillips", "file": "img/logoConocoPhillipsTranparent.png", "url": "https://www.conocophillips.com"},{"name": "Tendeka", "file": "img/logoTendekaTransparent.png", "url": "https://www.tendeka.com"},{"name": "Calmena", "file": "img/logoCalmenaTransparent.png", "url": ""},{"name": "EnerplusCorporation", "file": "img/logoEnerplusTranparent.png", "url": "https://www.enerplus.com"},{"name": "NXTEnergySolutions", "file": "img/logoNXTEnergySolutionsTransparent.png", "url": "http://www.nxtenergy.com/"},{"name": "WeatherfordnowStratumReservoir", "file": "img/logoWeatherfordTransparent.png", "url": "https://www.stratumreservoir.com"},{"name": "DIKUWIncorporated", "file": "img/logoDIKUWTransparent.png", "url": "https://www.dikuw.ca"},{"name": "EmersonAutomationSolutions", "file": "img/logoEmersonTransparent.png", "url": "https://www.emerson.com/en-ca/automation/control-and-safety-systems/scada-systems/zedi-cloud-scada-solutions"}
 ];
 
+var main = document.querySelector('main');
+console.log({main});
+const content = JSON.stringify(resumeData);
+const contentParsed = JSON.parse(content);
+appendDom(main,contentParsed)
+// printAllVals(contentParsed);
+// Object.entries(contentParsed).forEach( section => {
+//   appendDom('main',section);
+// })
+// console.log({contentParsed});
+// const contentObject = Object.entries(contentParsed);
+// console.log({contentObject});
+// contentParsed.forEach(section => {
+//   console.log({section});  
+// });
+// appendDom(main, contentParsed);
+
+
+
+
 
 //Parse resume object with stringify to overcome common error LMGTFY and sort to reverseChron
 const work = JSON.stringify(resumeData.work);
 var workParsed = JSON.parse(work).sort((a,b) => new Date(b.endDate) - new Date(a.endDate));
+
 workParsed.forEach( (item) => calculateDuration(item)); //Add durationPhrase
 //Add formatted durations to object
 workParsed.forEach(job => calculateDuration(job));
@@ -271,7 +292,6 @@ workSummary.forEach( (summary) => {
   delete summary.startDate; // = prettyDates(summary.startDate);
 
   //Create expDetail
-  console.log({summary});
   Object.entries(summary).forEach(detail => {
     const detailType = `expDetail${detail[0].charAt(0).toUpperCase()}${detail[0].slice(1)}`;
     eval(`var ${detailType} = document.createElement('p')`);
@@ -364,7 +384,7 @@ workSummary.forEach( (summary) => {
 
 
 
-var main = document.querySelector('main');
+
 main.appendChild(expContainer);
 
 function calculateDuration(array) {
@@ -397,3 +417,85 @@ function prettyDates(date) {
   const datePretty = `${datePrettyMonth}-${datePrettyYear}`
   return datePretty
 }
+
+// function appendDom(container, jsonData) {
+//   // for (var i = 0; i <jsonData.length; i++) {
+//   //     var $divParent  = $("<div></div>");
+//   //     $divParent.text(jsonData[i].label).attr('id',jsonData[i].id);
+//   //     if (jsonData[i].children) {
+//   //         appendDom($divParent, jsonData[i].children);
+//   //     }
+//   //     container.append($divParent);
+//   // }
+// }
+
+function printAllVals(obj) {
+  for (let k in obj) {
+    if (typeof obj[k] === "string") {
+      // base case, stop recurring
+      var detail = obj[k]
+      console.log({detail});
+    } else {
+
+      var objectK = obj[k];
+      console.log({objectK});
+      printAllVals(obj[k])
+    }
+  }
+}
+
+function appendDom (target,jsonData) {
+  console.log(typeof jsonData);
+  console.log({jsonData});
+  if (typeof jsonData == 'array') {
+    console.log('An Array has been found')
+  } else if (typeof jsonData == 'object') {
+    console.log('An Object has been found');
+    Object.entries(jsonData).forEach( element => {
+      eval(`var elementName = String(element[0])`);
+      eval(`var ${elementName}Obj = document.createElement('div')`);
+      // console.log(typeof elementName);
+      Object.assign(eval(`${elementName}Obj`), {
+        // className: eval(`${element[0]}`)
+        className: elementName
+      });
+      console.log({main});
+      console.log({target});
+      // appendDom(eval(`${elementName}Obj`), eval(`${elementName}Obj`[1]));
+      target.appendChild(eval(`${elementName}Obj`));
+    });
+    
+  }
+}
+
+// function toJSON(element)
+//     var returnObject;
+//     switch
+//         case: item
+//             returnObject = {
+//                 "id": elementId,
+//                 "width": elementWidth
+//             };
+//             break;
+//         case: default
+//             returnObject = [];
+//             for each child
+//                 returnObject.push(toJSON(child));
+//             break;
+//     return returnObject;
+
+// function appendDom(container, jsonData) {
+//   writeDOMElement(container, 'basics','div');
+//   console.log(jsonData);
+//   `var jsonData`
+// }
+
+// function writeDOMElement (parent,child,type) {
+//   // parent = document.querySelector(parent);
+//   eval(`var ${child} = document.createElement(type)`);
+//   Object.assign( eval`${child}`), {
+//     className: child
+//   }
+//   console.log(parent);
+//   main.appendChild(child);
+// }
