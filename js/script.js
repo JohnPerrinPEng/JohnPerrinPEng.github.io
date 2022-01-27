@@ -520,7 +520,7 @@ function appendDom (targetObj,data) {
       console.log({targetObj});
       console.log(domElement);
       targetObj.appendChild(domElement);
-      appendDom(targetObj, data[dataKey])
+      appendDom(domElement, data[dataKey])
     }
   })
 }
