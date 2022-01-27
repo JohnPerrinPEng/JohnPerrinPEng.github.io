@@ -73,6 +73,7 @@ p {
     flex-flow: nowrap;
     justify-content: space-between;
     padding: 2px;
+    background-color: var(--accent-light);
 }
 .expPositionContainer {
     /* border-left: 5px solid  #4295cc; */

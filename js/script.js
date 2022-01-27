@@ -162,7 +162,7 @@ var logoImages = [
 ];
 
 var main = document.querySelector('main');
-console.log({main});
+// console.log({main});
 const content = JSON.stringify(resumeData);
 const contentParsed = JSON.parse(content);
 appendDom(main,contentParsed)
@@ -444,29 +444,177 @@ function printAllVals(obj) {
   }
 }
 
-function appendDom (target,jsonData) {
-  console.log(typeof jsonData);
-  console.log({jsonData});
-  if (typeof jsonData == 'array') {
-    console.log('An Array has been found')
-  } else if (typeof jsonData == 'object') {
-    console.log('An Object has been found');
-    Object.entries(jsonData).forEach( element => {
-      eval(`var elementName = String(element[0])`);
-      eval(`var ${elementName}Obj = document.createElement('div')`);
-      // console.log(typeof elementName);
-      Object.assign(eval(`${elementName}Obj`), {
-        // className: eval(`${element[0]}`)
-        className: elementName
+// function appendDom (target,jsonData) {
+//   console.log({jsonData});
+//   console.log(Object.keys(jsonData).length)
+//   console.log('An Object has been found');
+//   Object.entries(jsonData).forEach( element => {
+//     console.log({element});
+//     console.log( element[0],element[1])
+//     if ( typeof element == 'array' && element.length == 2 ) {
+//       console.log('Terminal');
+//     } else {
+//       console.log("Keep Going");
+//       eval(`var elementName = String(element[0])`);
+//       eval(`var obj${elementName} = document.createElement('div')`);
+//       Object.assign(eval(`obj${elementName}`), {
+//         className: elementName
+//       });
+//       // console.log(eval(`obj${elementName}`));
+//       // console.log({target});
+//       appendDom(eval(`obj${elementName}`), element[1]);
+//     }
+//     target.appendChild(eval(`obj${elementName}`));
+//   });
+// }
+
+// function appendDom (target,jsonData) {
+//   console.log({jsonData});
+//   console.log(Object.keys(jsonData).length)
+//   for (let keyJsonData in jsonData) {
+//     console.log(jsonData[keyJsonData]);
+
+    // for (let keySubKey in keyJsonData) {
+    //   console.log({keyJsonData.keySubKey})
+    // }
+
+    // console.log( typeof element ,element.length, typeof element[1])
+    // console.log(element.hasChildren)
+    // if ( Object.keys(element).length == 2 ) {
+    //   console.log('Terminal');
+    // } else {
+    //   console.log("Keep Going");
+    //   eval(`var elementName = String(element[0])`);
+    //   eval(`var obj${elementName} = document.createElement('div')`);
+    //   Object.assign(eval(`obj${elementName}`), {
+    //     className: elementName
+    //   });
+    //   // console.log(eval(`obj${elementName}`));
+    //   // console.log({target});
+    //   // appendDom(eval(`obj${elementName}`), element[1]);
+    // }
+    // target.appendChild(eval(`obj${elementName}`));
+  // };
+// }
+
+function appendDom (targetObj,data) {
+  var dataKeys = Object.keys(data);
+  dataKeys.forEach( dataKey => {
+    console.log(dataKey)
+    if (!Object.isExtensible(data[dataKey])) {
+      console.log('Cannot extend')
+      var domElement = document.createElement('p');
+      Object.assign( domElement, {
+        className: dataKey,
+        textContent: data[dataKey]
       });
-      console.log({main});
-      console.log({target});
-      // appendDom(eval(`${elementName}Obj`), eval(`${elementName}Obj`[1]));
-      target.appendChild(eval(`${elementName}Obj`));
-    });
-    
-  }
+      console.log({targetObj});
+      console.log(domElement);
+      targetObj.appendChild(domElement);
+    } else {
+      console.log("I stayed at a Holiday Inn Express");
+      var domElement = document.createElement('div');
+      Object.assign( domElement, {
+        className: dataKey
+      });
+      console.log({targetObj});
+      console.log(domElement);
+      targetObj.appendChild(domElement);
+      appendDom(targetObj, data[dataKey])
+    }
+  })
 }
+
+// function appendDom (target,data) {
+//   if (!Object.isExtensible(data)) {
+//     console.log('Nope');
+//   } else {
+//     console.log({data})
+//     var dataKeys = Object.keys(data);
+//     console.log({dataKeys});
+
+//     dataKeys.forEach( dataKey => {
+//       console.log({dataKey});
+//       // eval(`var varName = dataKey`)
+//       eval(`var domElement = document.createElement('div')`);
+//       console.log({domElement});
+//       Object.assign( domElement, {
+//         className: dataKey
+//       });
+      
+//       dataSub = data[dataKey];
+//       console.log({dataSub});
+//       dataSubKeys = Object.keys(dataSub);
+//       console.log({dataSubKeys});
+//       dataSubKeys.forEach( dataSubKey => {
+//         // console.log(dataSub[dataSubKey]);
+//         if (Array.isArray(dataSub[dataSubKey])) {
+//           appendDom (domElement,dataSub[dataSubKey]);
+//         } else {
+//           console.log(dataSub[dataSubKey]);
+//         }     
+//       });
+//       target.appendChild(domElement);
+//     });
+//   }
+  
+  // for (sub in subCat) {
+  //   console.log(sub[0]);
+  // }
+
+  // for (let dataKey in data) {
+  //   console.log(data[dataKey]);
+  //   eval(`var varName = String(dataKey)` );
+  //   console.log({varName});
+  //   eval(`var eleName =  document.createElement('div')`);
+  //   Object.assign( varName, {
+  //     className: varName
+  //   })
+  //   console.log(data[dataKey]);
+  //   for (let dataKeyKey in data[dataKey]) {
+  //     console.log({dataKeyKey});
+  //     console.log(data[dataKey][dataKeyKey]);
+  //     console.log( typeof data[dataKey][dataKeyKey]);
+  //     if (typeof data[dataKey][dataKeyKey] == 'string') {
+  //       console.log('Terminal Node');
+  //     } else {   }
+      
+  //   }
+  //   target.appendChild(eleName)
+  //  }
+// }
+// function appendDom (target,jsonData) {
+//   console.log({jsonData});
+//   console.log(Object.keys(jsonData).length)
+//   if (jsonData[0] == 'string' && jsonData[1] == 'string') {
+//     console.log('No Children')
+//   } else {
+//     console.log('Children')
+//     // eval(`var name = String(jsonData[0])`);
+//     eval(`var obj${jsonData[0]} = document.createElement('div')`);
+//     eval(`var elementName = String(jsonData[0])`);
+//     Object.assign(eval(`obj${jsonData[0]}`), {
+//       className: elementName
+//     });
+//   }
+//   } else if (typeof jsonData == 'object') {
+//     console.log('An Object has been found');
+//     Object.entries(jsonData).forEach( element => {
+//       console.log({element});
+//       eval(`var elementName = String(element[0])`);
+//       eval(`var obj${elementName} = document.createElement('div')`);
+      
+//       Object.assign(eval(`obj${elementName}`), {
+//         className: elementName
+//       });
+//       // console.log(eval(`obj${elementName}`));
+//       // console.log({target});
+//       appendDom(eval(`obj${elementName}`), element[1]);
+//       target.appendChild(eval(`obj${elementName}`));
+//     });
+    
+//   // }
+// }
 
 // function toJSON(element)
 //     var returnObject;
