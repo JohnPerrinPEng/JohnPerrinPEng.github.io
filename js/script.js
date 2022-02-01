@@ -12,7 +12,7 @@ const resumeData = {
     "basics": {
       "name": "John Perrin",
       "label": "Excellence from the future, TODAY.",
-      "image": "https://user-images.githubusercontent.com/93789056/150057011-5d0e512a-02dd-476c-b40a-7f98e489499c.JPG",
+      "image": "img/personalProfilePicJohnPerrin.JPG",
       "summary": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
       "email": "perrin.john@gmail.com",
       "location": {
@@ -27,8 +27,8 @@ const resumeData = {
           "network": "LinkedIn"
         },
         {
-          "url": "https://github.com/JPProfessional",
-          "username": "JPProfessional",
+          "url": "https://github.com/JohnPerrinPEng",
+          "username": "JohnPerrinPEng",
           "network": "github"
         }
       ]
@@ -39,7 +39,7 @@ const resumeData = {
         "startDate": "1993-09-01",
         "area": "Mechanical Engineering",
         "studyType": "Bachelors of Science (BSc)",
-        "institution": "University of Alberta",
+        "entity": "University of Alberta",
         "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html",
         "location": "Edmonton, Canada",
         "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png"
@@ -49,7 +49,7 @@ const resumeData = {
         "startDate": "1991-09-01",
         "area": "Engineering",
         "studyType": "Certificate of Applied Science (CAS)",
-        "institution": "Acadia University",
+        "entity": "Acadia University",
         "url": "https://engineering.acadiau.ca/Welcome.html",
         "location": "Wolfville, Canada",
         "file": "img/logoAcadiaUniversityEngineeringTranparent.png"
@@ -57,16 +57,16 @@ const resumeData = {
     ],
     "volunteering": [
       {
-        "position": "Member of Autonomous Systems Advisory Group",
+        "role": "Member of Autonomous Systems Advisory Group",
         "entity": "Engineers Canada",
-        "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The purpose is to produce a substantiated research document for the regulators to consider these issues within their own jurisdictions.",
+        "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The purpose is to produce a substantiated research document for the use of Provincial and Territorial regulators in consideration of these same issues within their own jurisdictions.",
         "startDate": "2020-09-01",
         "endDate": "2021-12-15",
         "url": "https://engineerscanada.ca/",
         "file": "img/logoEngineersCanada.png"
       },
       {
-        "position": "Big Brother",
+        "role": "Big Brother",
         "entity": "Big Brothers and Big Sisters of Calgary & Area",
         "startDate": "2008-05-01",
         "endDate": "2013-05-15",
@@ -74,7 +74,7 @@ const resumeData = {
         "file": "img/logoBBBSCalgary.png"
       },
       {
-        "position": "President",
+        "role": "President",
         "entity": "Canadian Progress Club - Calgary Downtown Chapter",
         "startDate": "2010-09-01",
         "endDate": "2011-08-30",
@@ -83,7 +83,7 @@ const resumeData = {
 
       },
       {
-        "position": "Member",
+        "role": "Member",
         "entity": "Canadian Progress Club - Calgary Downtown Chapter",
         "startDate": "2006-09-01",
         "endDate": "2011-08-30",
@@ -92,7 +92,7 @@ const resumeData = {
 
       },
       {
-        "position": "2015 Session Co-Chair: New Ideas in Western Canadian Resource Plays",
+        "role": "2015 Session Co-Chair: New Ideas in Western Canadian Resource Plays",
         "entity": "GeoConvention Partnership",
         "startDate": "2014-09-01",
         "endDate": "2015-05-15",
@@ -143,34 +143,34 @@ const resumeData = {
       }
     ],
     "work": [
-      {"name": "Atomic Energy Canada Limited", "position": "Intern for Fluid Sealing Technology Unit", "Summary": "Joint role as Intern for Fluid Sealing Technology Unit and Tutor for Deep River Science Academy.", "location": "Chalk River, Canada", "startDate": "1996-05-01", "endDate": "1996-08-31"},
-      {"name": "Atomic Energy Canada Limited", "position": "Reactor Services Engineer", "Summary": "I joined Reactor Services to research, build, inspect and repair CANDU Nuclear Fuel Channel Components.", "location": "Mississauga, Canada", "startDate": "1997-05-28", "endDate": "2000-07-09"},
-      {"name": "Atomic Energy Canada Limited", "position": "Supervisor, Calandria Restoration", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1998-06-15", "endDate": "1998-08-30"},
-      {"name": "Atomic Energy Canada Limited", "position": "Supervisor, Sub-Assembly and Components", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1999-02-01", "endDate": "1999-07-31"},
-      {"name": "Schlumberger", "position": "Field Engineer Trainee", "Summary": "Joined Schlumberger as a Wireline Field Engineer Trainee and progressed through the ranks to General Field Engineer in Charge over 4 years in Saudi Arabia, Kuwait and United Arab Emirates. Subsequently transferred to Calgary in Wireline Sales and finally promoted to Canada Recruiter for one year.", "location": "Shreveport, USA", "startDate": "2000-07-09", "endDate": "2000-10-15"},
-      {"name": "Schlumberger", "position": "Field Engineer", "Summary": "", "location": "Al Khobar, Saudi Arabia", "startDate": "2000-10-16", "endDate": "2002-01-01"},
-      {"name": "Schlumberger", "position": "Field Engineer", "Summary": "Tranferred to Kuwait Land location ", "location": "Ahmadi, Kuwait", "startDate": "2002-01-01", "endDate": "2002-09-15"},
-      {"name": "Schlumberger", "position": "Senior Field Engineer", "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2002-09-15", "endDate": "2003-02-01"},
-      {"name": "Schlumberger", "position": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-02-01", "endDate": "2004-10-01"},
-      {"name": "Schlumberger", "position": "General Field Engineer", "Summary": "Promoted to General Field Enginer after fulfill GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-12-01", "endDate": "2004-10-01"},
-      {"name": "Schlumberger", "position": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Calgary, Canada", "startDate": "2004-10-01", "endDate": "2006-04-01"},
-      {"name": "Schlumberger", "position": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs. by OFS G", "location": "Calgary, Canada", "startDate": "2006-04-01", "endDate": "2006-12-12"},
-      {"name": "ConocoPhillips", "position": "Petrophysicist", "Summary": "Recruited by former clients in the Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.", "location": "Calgary, Canada", "startDate": "2007-05-01", "endDate": "2008-04-20"},
-      {"name": "Tendeka", "position": "Vice President North and South America for Senornet", "Summary": "Recruited as Vice President North and South America for Sensornet Limited.", "location": "Calgary, Canada", "startDate": "2008-05-01", "endDate": "2009-09-01"},
-      {"name": "Tendeka", "position": "Regional Manager Canada and Strategic Relationship Manager", "Summary": "Promoted to Strategic Relationship Manager and Regional Manager Canada on the combination of Sensornet, SwellFifix and WellTechnogolgy by Kenda Capital in June 2009..", "location": "Calgary, Canada", "startDate": "2009-09-01", "endDate": "2010-12-13"},
-      {"name": "Calmena", "position": "Microseismic Business Development Manager", "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.", "location": "Calgary, Canada", "startDate": "2010-12-13", "endDate": "2012-12-18"},
-      {"name": "Enerplus Corporation", "position": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, Canada", "startDate": "2012-12-18", "endDate": "2015-06-02"},
-      {"name": "Weatherford now Stratum Reservoir", "position": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, Canada", "startDate": "2017-04-01", "endDate": "2018-06-21"},
-      {"name": "DIKUW Incorporated", "position": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2022-01-24"},
-      {"name": "DIKUW Incorporated", "position": "Consulting Engagement to CEDA Technical Center of Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary “Comprehensive Framework for Field Operations Project Management and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
-      {"name": "Emerson Automation Solutions", "position": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-05-01", "endDate": "2019-08-01"},
-      {"name": "Emerson Automation Solutions", "position": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-08-01", "endDate": "2020-02-01"},
-      {"name": "Emerson Automation Solutions", "position": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, Canada", "startDate": "2020-02-01", "endDate": "2020-10-01"},
-      {"name": "Emerson Automation Solutions", "position": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Calgary, Canada", "startDate": "2020-10-01", "endDate": "2021-09-30"},
+      {"name": "Atomic Energy Canada Limited", "role": "Intern for Fluid Sealing Technology Unit", "Summary": "Joint role as Intern for Fluid Sealing Technology Unit and Tutor for Deep River Science Academy.", "location": "Chalk River, Canada", "startDate": "1996-05-01", "endDate": "1996-08-31"},
+      {"name": "Atomic Energy Canada Limited", "role": "Reactor Services Engineer", "Summary": "I joined Reactor Services to research, build, inspect and repair CANDU Nuclear Fuel Channel Components.", "location": "Mississauga, Canada", "startDate": "1997-05-28", "endDate": "2000-07-09"},
+      {"name": "Atomic Energy Canada Limited", "role": "Supervisor, Calandria Restoration", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1998-06-15", "endDate": "1998-08-30"},
+      {"name": "Atomic Energy Canada Limited", "role": "Supervisor, Sub-Assembly and Components", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1999-02-01", "endDate": "1999-07-31"},
+      {"name": "Schlumberger", "role": "Field Engineer Trainee", "Summary": "Joined Schlumberger as a Wireline Field Engineer Trainee and progressed through the ranks to General Field Engineer in Charge over 4 years in Saudi Arabia, Kuwait and United Arab Emirates. Subsequently transferred to Calgary in Wireline Sales and finally promoted to Canada Recruiter for one year.", "location": "Shreveport, USA", "startDate": "2000-07-09", "endDate": "2000-10-15"},
+      {"name": "Schlumberger", "role": "Field Engineer", "Summary": "", "location": "Al Khobar, Saudi Arabia", "startDate": "2000-10-16", "endDate": "2002-01-01"},
+      {"name": "Schlumberger", "role": "Field Engineer", "Summary": "Tranferred to Kuwait Land location ", "location": "Ahmadi, Kuwait", "startDate": "2002-01-01", "endDate": "2002-09-15"},
+      {"name": "Schlumberger", "role": "Senior Field Engineer", "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2002-09-15", "endDate": "2003-02-01"},
+      {"name": "Schlumberger", "role": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-02-01", "endDate": "2004-10-01"},
+      {"name": "Schlumberger", "role": "General Field Engineer", "Summary": "Promoted to General Field Enginer after fulfill GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-12-01", "endDate": "2004-10-01"},
+      {"name": "Schlumberger", "role": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Calgary, Canada", "startDate": "2004-10-01", "endDate": "2006-04-01"},
+      {"name": "Schlumberger", "role": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs.", "location": "Calgary, Canada", "startDate": "2006-04-01", "endDate": "2006-12-12"},
+      {"name": "ConocoPhillips", "role": "Petrophysicist", "Summary": "Recruited by former clients in the Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.", "location": "Calgary, Canada", "startDate": "2007-05-01", "endDate": "2008-04-20"},
+      {"name": "Tendeka", "role": "Vice President North and South America for Senornet", "Summary": "Recruited as Vice President North and South America for Sensornet Limited.", "location": "Calgary, Canada", "startDate": "2008-05-01", "endDate": "2009-09-01"},
+      {"name": "Tendeka", "role": "Regional Manager Canada and Strategic Relationship Manager", "Summary": "Promoted to Strategic Relationship Manager and Regional Manager Canada on the combination of Sensornet, SwellFifix and WellTechnogolgy by Kenda Capital in June 2009..", "location": "Calgary, Canada", "startDate": "2009-09-01", "endDate": "2010-12-13"},
+      {"name": "Calmena", "role": "Microseismic Business Development Manager", "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.", "location": "Calgary, Canada", "startDate": "2010-12-13", "endDate": "2012-12-18"},
+      {"name": "Enerplus Corporation", "role": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, Canada", "startDate": "2012-12-18", "endDate": "2015-06-02"},
+      {"name": "Weatherford now Stratum Reservoir", "role": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, Canada", "startDate": "2017-04-01", "endDate": "2018-06-21"},
+      {"name": "DIKUW Incorporated", "role": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2022-01-24"},
+      {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA Technical Center of Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary “Comprehensive Framework for Field Operations Project Management and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
+      {"name": "Emerson Automation Solutions", "role": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-05-01", "endDate": "2019-08-01"},
+      {"name": "Emerson Automation Solutions", "role": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-08-01", "endDate": "2020-02-01"},
+      {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, Canada", "startDate": "2020-02-01", "endDate": "2020-10-01"},
+      {"name": "Emerson Automation Solutions", "role": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Calgary, Canada", "startDate": "2020-10-01", "endDate": "2021-09-30"},
       ]
 }
 
-var positionHighlights = [
+var roleHighlights = [
   {"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Succesfully identified failure mode of Primary Heat Transport Pump Seal."},
   {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"Designed, simulated, fabricated, instrumented and reported results for CANDU6 30 Year Retube Operations"},
   {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"Revised and published CANDU 6 Fuel Channel Installation Manual"},
@@ -245,34 +245,62 @@ Object.entries( contentParsed ).forEach( child => {
 });
 
 function volunteeringFormatter(volObj) {
-  var volObjSort = volObj[1].sort((a,b) => new Date(b.endDate) - new Date(a.endDate));
-  // console.log({volObjSort});
   var volunteerSummary = summarizeByEntity (volObj);
-  var section = document.querySelector('#volunteering')
-  console.log({section})
+  // var rolesObj = roleifyByEntity(volObj);
   volunteerSummary.forEach( summary => {
-    console.log(volObj[0])
-    // console.log(document.getElementByID(volObj[0]))
-    recordContainerizer('entity', 'entityContainer', document.getElementById(volObj[0]), volObj[0]);
-    logoContainer = containerizeLogo(summary.entity, volObj[0], summary.file, summary.url);
-    // Document.getElementsByClassName("sectionContainer").getElementById(volObj[0]).appendChild(logoContainer);
+    var recordContainer = recordContainerizer( 'record' , 'recordContainer', summary.entity );
+    var logoContainer = containerizeLogo(summary.entity, summary.entity, summary.file, summary.url);
+    var summaryEntity = paragraphizer( summary.entity, summary.entity, 'detail' );
+    var summaryDuration = paragraphizer( summary.durationPhrase, summary.entity, 'detail');
+    var recordTextContainer = recordContainerizer('recordText', 'recordTextContainer', summary.entity);
+    var recordSummaryRow = recordContainerizer('recordSummaryRow', 'recordSummaryRow', summary.entity);
+    var rolesByEntity = roleifyByEntity(volObj[1].filter( item => item.entity == summary.entity));
+    console.log({rolesByEntity})
+
+    recordSummaryRow.appendChild( summaryEntity );
+    recordSummaryRow.appendChild( summaryDuration );
+    recordTextContainer.appendChild( recordSummaryRow )
+    recordTextContainer.appendChild( rolesByEntity )
+    recordContainer.appendChild( logoContainer )
+    recordContainer.appendChild( recordTextContainer)
+    document.getElementById('volunteering').appendChild(recordContainer)
   })
 
+}
+
+function roleifyByEntity(entityRolesObj) {
+  var roleTextContainer = recordContainerizer('roleTextContainer', 'roleTextContainer', entityRolesObj[0].entity);
+  entityRolesObj.forEach( (role) => {
+    roleDates = `${prettyDates(role.startDate)} to ${prettyDates(role.endDate)}`
+    var roleContainer = recordContainerizer('role', 'roleContainer', role.entity);
+    var roleSummaryRole = paragraphizer(role.role, role.entity, 'detail entity');
+    var roleSummaryLocation = paragraphizer(role.location, role.entity, 'detail location');
+    var roleSummaryDates = paragraphizer(roleDates, role.entity, 'detail duration');
+    var roleSummaryRow = recordContainerizer('roleSummaryRow', 'roleSummaryRow', role.entity);
+    roleSummaryRow.appendChild(roleSummaryRole);
+    roleSummaryRow.appendChild(roleSummaryLocation);
+    roleSummaryRow.appendChild(roleSummaryDates);
+    roleTextContainer.appendChild(roleSummaryRow);
+    var roleNarrative = paragraphizer(role.narrative, role.entity, 'detail narrative');
+    roleTextContainer.appendChild(roleNarrative);
+    console.log({roleTextContainer})
+  });
+  return roleTextContainer
 }
 
 function summarizeByEntity ( listingArray ) {
   // console.log({listingArray})
   const entityList = [...new Set(listingArray[1].map( item => item.entity))];
-  console.log({entityList}) // Create an object of unique companies worked and populate with summary data
   var entitySummary = [];
   entityList.forEach( (entity, index) => {
     const regex = RegExp(entity);
-    console.log({regex})
     const entitySet = listingArray[1].filter(({entity}) => entity.match(regex));
     // Create entity record if 1 unique entry
     if ( !entitySet[1]) {
       var record = {
         "entity": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).entity,
+        "file": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).file,
+        "url": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).url,
         "startDate": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).startDate,
         "endDate": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).endDate
       }
@@ -286,6 +314,8 @@ function summarizeByEntity ( listingArray ) {
       },"0");
       var record = {
         "entity": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).entity,
+        "file": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).file,
+        "url": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).url,
         "startDate":entityStartDate,
         "endDate":entityEndDate
       }
@@ -293,7 +323,6 @@ function summarizeByEntity ( listingArray ) {
     calculateDuration(record);//Add durationPhrase
     entitySummary[index] = record;//Add record to summary object
   });
-  console.log({entitySummary});
   return entitySummary
 }
 
@@ -304,49 +333,47 @@ function educationFormatter(educationObj) {
 
     // const gradPhrase = `${}`
     calculateDuration(educationRec);
-    var educationPhrase = `${educationRec.studyType}, ${educationRec.area}, ${educationRec.institution}, ${educationRec.durationPhrase}`
-    
     var detailRowContent = `${educationRec.location} from ${prettyDates(educationRec.startDate)} to ${prettyDates(educationRec.endDate)}.`
     var detailRow = document.createElement('p')
     Object.assign( detailRow, {
-      id: 'education',
-      className: 'detail',
+      id: `${educationRec.entity}`,
+      className: 'summaryDetail',
       textContent: `${detailRowContent}`
     })
 
     var recordSummaryRow = document.createElement('div')
     Object.assign( recordSummaryRow, {
-      id: 'education',
+      id: `${educationRec.entity}`,
       className: 'recordSummaryRow'
     })
     
     var summaryEntity = document.createElement('p')
     Object.assign( summaryEntity, {
-      className: 'detail entity',
-      id: 'education',
-      textContent: `${educationRec.institution}`
+      id: `${educationRec.entity}`,
+      className: 'summaryDetail',
+      textContent: `${educationRec.entity}`
     })
     
     const summaryCredential = document.createElement('p')
     Object.assign( summaryCredential, {
-      className: 'entityDetail Credential',
-      id: 'education',
+      id: `${educationRec.entity}`,
+      className: 'summaryDetail',
       textContent: `${educationRec.studyType} in ${educationRec.area}`
     })
     
     
     var recordTextContainer = document.createElement('div');
     Object.assign( recordTextContainer, {
-      id: 'education',
+      id: `${educationRec.entity}`,
       className: 'recordTextContainer'
     })
 
     var recordContainer = document.createElement('div');
     Object.assign( recordContainer, {
-      id: 'education',
+      id: `${educationRec.entity}`,
       className: 'recordContainer'
     })
-    var logoContainer = containerizeLogo( educationRec.institution, 'education', educationRec.file, educationRec.url)
+    var logoContainer = containerizeLogo( educationRec.entity, educationRec.entity, educationRec.file, educationRec.url)
     
     recordSummaryRow.append( summaryEntity, summaryCredential);
     
@@ -361,15 +388,24 @@ function educationFormatter(educationObj) {
  
 }
 
-
-function recordContainerizer (instance, className, parentObj, id) {
-  eval(`var ${instance}Container = document.createElement('div')`);
-  Object.assign( eval(`${instance}Container`), {
+function paragraphizer(text, id, className) {
+  var textNode = document.createElement('p');
+  Object.assign( textNode , {
     id: id,
     className: className,
-    
+    textContent: text
+  })
+  return textNode
+}
+
+function recordContainerizer (instance, className, id) {
+  eval(`var ${instance}Container = document.createElement('div')`);
+  Object.assign( eval(`${instance}Container`), {
+    id: `${id}`,
+    className: className,
   });
-  parentObj.append(eval(`${instance}Container`));
+  // parentObj.append(eval(`${instance}Container`));
+  return eval(`${instance}Container`);
 }
 
 function sectionCreator( sectionObj ) {
@@ -391,35 +427,33 @@ function sectionCreator( sectionObj ) {
 
 
 
-function containerizeLogo(name, id, file, url) {
-  console.log({file});
-  console.log({url});
-  console.log({id});
+function containerizeLogo(entity, id, file, url) {
+  shortName = entity.split(" ").join("");
   var logoImg = document.createElement('img');
   Object.assign( logoImg , {
-    className: 'logoImg',
     id: id,
-    alt: `${name} Logo`,
+    className: 'logoImg',
+    alt: `${entity} Logo`,
     src: `${file}`
   });
   var logoHref = document.createElement('a');
   Object.assign( logoHref , {
-    className: 'logoHref',
     id: id,
+    className: 'logoHref',
     href: url
   });
   logoContainer = document.createElement('div');
   Object.assign( logoContainer , {
-    className: 'logoContainer',
-    id: id
+    id: id,
+    className: 'logoContainer'
   });
   logoHref.appendChild(logoImg);
   logoContainer.appendChild(logoHref);
-  console.log({logoContainer});
   return logoContainer
 }
 
 function calculateDuration(array) {
+  console.log({array})
   start = new Date(array.startDate);
   end = new Date(array.endDate);
   var durationYears;
@@ -597,67 +631,67 @@ function workify(workParsed) {
     })
     eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}SummaryRow`));
 
-    // Create position DOM
-    const positions = workParsed.filter(({name}) => name.match(RegExp(summary.name)));
-    var positionSummaryFields = {}
-    positions.forEach( (summary,index) => {
-      //Build positionSummaryFields 
+    // Create role DOM
+    const roles = workParsed.filter(({name}) => name.match(RegExp(summary.name)));
+    var roleSummaryFields = {}
+    roles.forEach( (summary,index) => {
+      //Build roleSummaryFields 
 
         
-        //Build expPositionContainer
-        eval(`var ${companyNameCollapsed}${index}PositionContainer = document.createElement('div')`);
-        Object.assign( eval(`${companyNameCollapsed}${index}PositionContainer`), {
-          className: 'expPositionContainer'
+        //Build roleContainer
+        eval(`var ${companyNameCollapsed}${index}roleContainer = document.createElement('div')`);
+        Object.assign( eval(`${companyNameCollapsed}${index}roleContainer`), {
+          className: 'roleContainer'
         });
-        eval(eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionContainer`)));
+        eval(eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}${index}roleContainer`)));
         
-        //Build expPositionSummaryRow
+        //Build roleSummaryRow
         
-        eval(`var ${companyNameCollapsed}${index}PositionSummaryRow = document.createElement('div')`);
-        Object.assign( eval(`${companyNameCollapsed}${index}PositionSummaryRow`), {
-          className: 'expPositionSummaryRow'
+        eval(`var ${companyNameCollapsed}${index}roleSummaryRow = document.createElement('div')`);
+        Object.assign( eval(`${companyNameCollapsed}${index}roleSummaryRow`), {
+          className: 'roleSummaryRow'
         });
-        eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionSummaryRow`));
+        eval(`${companyNameCollapsed}${index}roleContainer`).appendChild(eval(`${companyNameCollapsed}${index}roleSummaryRow`));
         
         // Build details to go inside summary row
-        positionSummaryFields = {
-          "position": summary.position,
+        roleSummaryFields = {
+          "role": summary.role,
           "location": summary.location,
           "dates": `${prettyDates(summary.startDate)} to ${prettyDates(summary.endDate)}`
           // "duration": summary.durationPhrase 
           }
-        Object.entries(positionSummaryFields).forEach((positionDetail) => {
-          const detailType = `positonDetail${positionDetail[0].charAt(0).toUpperCase()}${positionDetail[0].slice(1)}`;
+        Object.entries(roleSummaryFields).forEach((roleDetail) => {
+          const detailType = `positonDetail${roleDetail[0].charAt(0).toUpperCase()}${roleDetail[0].slice(1)}`;
           eval(`var ${detailType} = document.createElement('p')`);
           Object.assign( eval(detailType), {
             className: detailType,
-            textContent: positionDetail[1]
+            textContent: roleDetail[1]
           });
-          eval(`${detailType}`).classList.add('positionDetail');
-          // eval(`${companyNameCollapsed}${index}PositionSummaryContainer`).appendChild(eval(`${companyNameCollapsed}${index}${detail}`));
-          eval(`${companyNameCollapsed}${index}PositionSummaryRow`).appendChild(eval(`${detailType}`));
+          eval(`${detailType}`).classList.add('roleDetail');
+          // eval(`${companyNameCollapsed}${index}roleSummaryContainer`).appendChild(eval(`${companyNameCollapsed}${index}${detail}`));
+          eval(`${companyNameCollapsed}${index}roleSummaryRow`).appendChild(eval(`${detailType}`));
         })
         
         //Build postion narrative
-        eval(`var ${companyNameCollapsed}${index}PositionNarrative = document.createElement('p')`);
-        Object.assign( eval(`${companyNameCollapsed}${index}PositionNarrative`), {
-          className: 'expPositionNarrative',
+        eval(`var ${companyNameCollapsed}${index}roleNarrative = document.createElement('p')`);
+        Object.assign( eval(`${companyNameCollapsed}${index}roleNarrative`), {
+          className: 'exproleNarrative',
           textContent: summary.Summary
         });
-        eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionNarrative`));
+        eval(`${companyNameCollapsed}${index}roleContainer`).appendChild(eval(`${companyNameCollapsed}${index}roleNarrative`));
 
         //Build highlight list
-        summary.unique = `${summary.position}${summary.name}${summary.startDate}` //Add unique to summary for matching
+        summary.unique = `${summary.role}${summary.name}${summary.startDate}` //Add unique to summary for matching
 
-        const highlightsFiltered = positionHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
+        const highlightsFiltered = roleHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
         if (highlightsFiltered.length > 0) {
           eval(`var ${companyNameCollapsed}${index}HighlightList = document.createElement('ul')`);
           Object.assign( eval(`${companyNameCollapsed}${index}HighlightList`), {
             className: 'expHighlightList',
           });
-          eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}HighlightList`));
+          eval(`${companyNameCollapsed}${index}roleContainer`).appendChild(eval(`${companyNameCollapsed}${index}HighlightList`));
 
-          const highlightsFiltered = positionHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
+          const highlightsFiltered = roleHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
           highlightsFiltered.forEach( (highlight,highlightIndex) => {
             eval(`var ${companyNameCollapsed}${highlightIndex}HighlightItem = document.createElement('li')`);
             Object.assign( eval(`${companyNameCollapsed}${highlightIndex}HighlightItem`), {
