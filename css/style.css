@@ -45,28 +45,29 @@ p {
     text-align: center;
     text-transform: uppercase;
 }
-.expCompanyContainer {
+.recordContainer {
     display: flex;
     flex-flow: row;
     margin: 4px;
 }
-.expCompanyLogoContainer {
+.logoContainer {
     width: 20%;
     height: inherit;
     display: flex;  
     align-items: center;
     justify-content: center;
 }
-.companyLogoImage {
+.logoImg {
     max-width: 8em;
+    max-height: 5em;
 }
-.expCompanyTextContainer {
+.recordTextContainer {
     flex-flow: column;
     width: 75%;
     padding: 2px;
     border-left: 3px solid var(--brand-gray);
 }
-.expCompanySummaryRow {
+.recordSummaryRow {
     font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
     font-size: 1.5em;
     display: flex;

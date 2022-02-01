@@ -40,7 +40,9 @@ const resumeData = {
         "area": "Mechanical Engineering",
         "studyType": "Bachelors of Science (BSc)",
         "institution": "University of Alberta",
-        "url": "www.ualberta.ca"
+        "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html",
+        "location": "Edmonton, Canada",
+        "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png"
       },
       {
         "endDate": "1993-05-01",
@@ -48,10 +50,56 @@ const resumeData = {
         "area": "Engineering",
         "studyType": "Certificate of Applied Science (CAS)",
         "institution": "Acadia University",
-        "url": "www.acadiau.ca"
+        "url": "https://engineering.acadiau.ca/Welcome.html",
+        "location": "Wolfville, Canada",
+        "file": "img/logoAcadiaUniversityEngineeringTranparent.png"
       }
     ],
-    "references": [],
+    "volunteering": [
+      {
+        "position": "Member of Autonomous Systems Advisory Group",
+        "entity": "Engineers Canada",
+        "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The purpose is to produce a substantiated research document for the regulators to consider these issues within their own jurisdictions.",
+        "startDate": "2020-09-01",
+        "endDate": "2021-12-15",
+        "url": "https://engineerscanada.ca/",
+        "file": "img/logoEngineersCanada.png"
+      },
+      {
+        "position": "Big Brother",
+        "entity": "Big Brothers and Big Sisters of Calgary & Area",
+        "startDate": "2008-05-01",
+        "endDate": "2013-05-15",
+        "url": "https://bbbscalgary.ca/",
+        "file": "img/logoBBBSCalgary.png"
+      },
+      {
+        "position": "President",
+        "entity": "Canadian Progress Club - Calgary Downtown Chapter",
+        "startDate": "2010-09-01",
+        "endDate": "2011-08-30",
+        "url": "https://www.progressclub.ca/",
+        "file": "img/logoCanadianProgressClub.png"
+
+      },
+      {
+        "position": "Member",
+        "entity": "Canadian Progress Club - Calgary Downtown Chapter",
+        "startDate": "2006-09-01",
+        "endDate": "2011-08-30",
+        "url": "https://www.progressclub.ca/",
+        "file": "img/logoCanadianProgressClub.png"
+
+      },
+      {
+        "position": "2015 Session Co-Chair: New Ideas in Western Canadian Resource Plays",
+        "entity": "GeoConvention Partnership",
+        "startDate": "2014-09-01",
+        "endDate": "2015-05-15",
+        "url": "https://geoconvention.com/",
+        "file": "img/logoGeocnvention2015.png"
+      }
+    ],
     "skills": [
       {
         "name": "Leadership",
@@ -97,7 +145,7 @@ const resumeData = {
     "work": [
       {"name": "Atomic Energy Canada Limited", "position": "Intern for Fluid Sealing Technology Unit", "Summary": "Joint role as Intern for Fluid Sealing Technology Unit and Tutor for Deep River Science Academy.", "location": "Chalk River, Canada", "startDate": "1996-05-01", "endDate": "1996-08-31"},
       {"name": "Atomic Energy Canada Limited", "position": "Reactor Services Engineer", "Summary": "I joined Reactor Services to research, build, inspect and repair CANDU Nuclear Fuel Channel Components.", "location": "Mississauga, Canada", "startDate": "1997-05-28", "endDate": "2000-07-09"},
-      {"name": "Atomic Energy Canada Limited", "position": "Supervisor, Calandria Restoration.", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1998-06-15", "endDate": "1998-08-30"},
+      {"name": "Atomic Energy Canada Limited", "position": "Supervisor, Calandria Restoration", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1998-06-15", "endDate": "1998-08-30"},
       {"name": "Atomic Energy Canada Limited", "position": "Supervisor, Sub-Assembly and Components", "Summary": "", "location": "Cernavoda, Romania", "startDate": "1999-02-01", "endDate": "1999-07-31"},
       {"name": "Schlumberger", "position": "Field Engineer Trainee", "Summary": "Joined Schlumberger as a Wireline Field Engineer Trainee and progressed through the ranks to General Field Engineer in Charge over 4 years in Saudi Arabia, Kuwait and United Arab Emirates. Subsequently transferred to Calgary in Wireline Sales and finally promoted to Canada Recruiter for one year.", "location": "Shreveport, USA", "startDate": "2000-07-09", "endDate": "2000-10-15"},
       {"name": "Schlumberger", "position": "Field Engineer", "Summary": "", "location": "Al Khobar, Saudi Arabia", "startDate": "2000-10-16", "endDate": "2002-01-01"},
@@ -138,7 +186,7 @@ var positionHighlights = [
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Attended Cased Hole Formation Resistivity Field Tester Training at Schlumberger Clamart"},
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in Kuwait."},
   {"unique":"Senior Field EngineerSchlumberger2002-09-15", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in United Arab Emirates."},
-  {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Successfully overcame casing guns differentially stuck to avoid arrest by Abu Dhabi National Police."},
+  {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Successfully overcame differentially stuck casing guns to avoid arrest by Abu Dhabi National Police."},
   {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Wireline Unit, Explosive Bunker and Schlumberger Doghouse move from Raniworo to Gus Androes on-time and on-budget"},
   {"unique":"General Field EngineerSchlumberger2003-12-01", "highlight":"Successfilly completed and presented results of Ultrasonic Imaging Tool Research And Development project on Effects of Sensor Sub Misallignment"},
   {"unique":"Technical Sales Engineer – WirelineSchlumberger2004-10-01", "highlight":"Increased Top Line revenue from named accounts from CAD9.5M to CAD12.5M"},
@@ -162,230 +210,214 @@ var logoImages = [
 ];
 
 var main = document.querySelector('main');
-// console.log({main});
 const content = JSON.stringify(resumeData);
 const contentParsed = JSON.parse(content);
-appendDom(main,contentParsed)
-// printAllVals(contentParsed);
-// Object.entries(contentParsed).forEach( section => {
-//   appendDom('main',section);
-// })
-// console.log({contentParsed});
-// const contentObject = Object.entries(contentParsed);
-// console.log({contentObject});
-// contentParsed.forEach(section => {
-//   console.log({section});  
-// });
-// appendDom(main, contentParsed);
 
-
-
-
-
-//Parse resume object with stringify to overcome common error LMGTFY and sort to reverseChron
+var contentDomObj = document.createElement('div');
+appendDom( contentDomObj, contentParsed ) //Add all resume content to contentDOMObj
+// main.insertBefore(contentDomObj, main.firstChild);
+//Pretty up the Experience portion
 const work = JSON.stringify(resumeData.work);
 var workParsed = JSON.parse(work).sort((a,b) => new Date(b.endDate) - new Date(a.endDate));
+workify(workParsed);
 
-workParsed.forEach( (item) => calculateDuration(item)); //Add durationPhrase
-//Add formatted durations to object
-workParsed.forEach(job => calculateDuration(job));
-//Add numeric dates to object
-// workParsed.forEach(job => job.startDateNumber = Date.parse(job.startDate));
-// workParsed.forEach(job => job.endDateNumber = Date.parse(job.endDate));
-//Add pretty dates to object
-// workParsed.forEach(job => job.startDatePretty = eval(`${Date.parse(job.startDate).getMonth()}-${Date.parse(job.startDate).getFullYear()}`));
-workParsed.forEach(job => job.prettyStartDate = prettyDates(job.startDate));
-workParsed.forEach(job => job.prettyEndDate = prettyDates(job.endDate));
 
-// Create an object of unique companies worked and populate with summary data
-const workSummaryList = [...new Set(workParsed.map( item => item.name))];
-var workSummary = [];
-var startDateSort
-workSummaryList.forEach( (company, index) => {
-  const regex = RegExp(company);
-  const nameSet = workParsed.filter(({name}) => name.match(regex));
-  //Create company Meta Data if company has 1 entry
-  if ( !nameSet[1]) {
-    var record = {
-      "name": company,
-      "startDate": workParsed.find(({ name }) => name.match(RegExp(regex))).startDate,
-      "endDate": workParsed.find(({ name }) => name.match(RegExp(regex))).endDate
-    }
-  // Create company Meta Data and summarize start and end if more than 1 entry
-  } else {
-    const nameStartDate = nameSet.map(a => a.startDate).reduce(function(min, cur) {
-      return cur < min ? cur : min;
-    },"21000");
-    const nameEndDate = nameSet.map(a => a.endDate).reduce(function(max, cur) {
-      return cur > max ? cur : max;
-    },"0");
-    var record = {
-      "name": company,
-      "startDate":nameStartDate,
-      "endDate":nameEndDate
-    }
+//Pretty format the content
+// for (child of contentParsed.children) {
+Object.entries( contentParsed ).forEach( child => { 
+  // console.log(child); 
+  switch ( child[0] ) {
+    case "work":
+      // console.log(child);
+      // workify(child[1]);
+      break
+    case "education":
+      sectionCreator(child); 
+      educationFormatter(child);
+      break
+    case "volunteering":
+      sectionCreator(child);  
+      volunteeringFormatter(child);
+      break
+    default:
+      // console.log('De Fault')
   }
-  calculateDuration(record);//Add durationPhrase
-  workSummary[index] = record;//Add record to summary object
-
 });
 
-var workSummarySorted = workSummary.sort();
-workSummary = workSummarySorted;
-delete workSummary.startDate;
-delete workSummary.endDate;
-
-var expTitle = document.createElement('h5');
-Object.assign( expTitle, {
-  className: "sectionTitle",
-  textContent: "Experience"
-} );
-var expContainer = document.createElement('div');
-expContainer.className = "expContainer"
-expContainer.appendChild(expTitle);
-
-
-//Create Exerience DOM
-workSummary.forEach( (summary) => {
-  const companyNameCollapsed = summary.name.split(" ").join("");
-
-  //Create company container with logo
-  eval(`var ${companyNameCollapsed}Container = document.createElement('div')`);
-  Object.assign( eval(`${companyNameCollapsed}Container`), {
-    className: 'expCompanyContainer'
-  });
-  eval(`var ${companyNameCollapsed}LogoContainer = document.createElement('div')`);
-  Object.assign( eval(`${companyNameCollapsed}LogoContainer`), {
-    className: 'expCompanyLogoContainer'
-  });
-  eval(`var ${companyNameCollapsed}TextContainer = document.createElement('div')`);
-  Object.assign( eval(`${companyNameCollapsed}TextContainer`), {
-    className: 'expCompanyTextContainer'
-  });
-  eval(`var ${companyNameCollapsed}LogoHref = document.createElement('a')`);
-  Object.assign( eval(`${companyNameCollapsed}LogoHref`), {
-    className: 'expCompanyHref',
-    href: logoImages.find(({ name }) => name.match(RegExp(companyNameCollapsed))).url
-  });
-
-  eval(`var ${companyNameCollapsed}Logo = document.createElement('img')`);
-  Object.assign( eval(`${companyNameCollapsed}Logo`), {
-    className: 'companyLogoImage',
-    alt: summary.name,
-    src: logoImages.find(({ name }) => name.match(RegExp(companyNameCollapsed))).file
-  });
-  eval(`${companyNameCollapsed}LogoHref`).appendChild(eval(eval(`${companyNameCollapsed}Logo`)));
-  eval(`${companyNameCollapsed}LogoContainer`).appendChild(eval(eval(`${companyNameCollapsed}LogoHref`)));
-  eval(`${companyNameCollapsed}Container`).appendChild(eval(`${companyNameCollapsed}LogoContainer`));
-  eval(`${companyNameCollapsed}Container`).appendChild(eval(`${companyNameCollapsed}TextContainer`));
-  expContainer.appendChild(eval(`${companyNameCollapsed}Container`));
-
-  
-  //Create expSummaryRow
-  eval(`var ${companyNameCollapsed}SummaryRow = document.createElement('div')`);
-  Object.assign( eval(`${companyNameCollapsed}SummaryRow`), {
-        className: 'expCompanySummaryRow',
-  });
-  
-  //Convert to prettyDates for display
-  delete summary.endDate; //= prettyDates(summary.endDate);
-  delete summary.startDate; // = prettyDates(summary.startDate);
-
-  //Create expDetail
-  Object.entries(summary).forEach(detail => {
-    const detailType = `expDetail${detail[0].charAt(0).toUpperCase()}${detail[0].slice(1)}`;
-    eval(`var ${detailType} = document.createElement('p')`);
-    Object.assign( eval(detailType), {
-      className: detail[0],
-      textContent: detail[1]
-    });
-    eval(detailType).classList.add('expDetail');
-    eval(`${companyNameCollapsed}SummaryRow`).appendChild(eval(detailType));
+function volunteeringFormatter(volObj) {
+  var volObjSort = volObj[1].sort((a,b) => new Date(b.endDate) - new Date(a.endDate));
+  // console.log({volObjSort});
+  var volunteerSummary = summarizeByEntity (volObj);
+  var section = document.querySelector('#volunteering')
+  console.log({section})
+  volunteerSummary.forEach( summary => {
+    console.log(volObj[0])
+    // console.log(document.getElementByID(volObj[0]))
+    recordContainerizer('entity', 'entityContainer', document.getElementById(volObj[0]), volObj[0]);
+    logoContainer = containerizeLogo(summary.entity, volObj[0], summary.file, summary.url);
+    // Document.getElementsByClassName("sectionContainer").getElementById(volObj[0]).appendChild(logoContainer);
   })
-  eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}SummaryRow`));
 
-  // Create position DOM
-  const positions = workParsed.filter(({name}) => name.match(RegExp(summary.name)));
-  var positionSummaryFields = {}
-  positions.forEach( (summary,index) => {
-    //Build positionSummaryFields 
+}
 
-      
-      //Build expPositionContainer
-      eval(`var ${companyNameCollapsed}${index}PositionContainer = document.createElement('div')`);
-      Object.assign( eval(`${companyNameCollapsed}${index}PositionContainer`), {
-        className: 'expPositionContainer'
-      });
-      eval(eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionContainer`)));
-      
-      //Build expPositionSummaryRow
-      
-      eval(`var ${companyNameCollapsed}${index}PositionSummaryRow = document.createElement('div')`);
-      Object.assign( eval(`${companyNameCollapsed}${index}PositionSummaryRow`), {
-        className: 'expPositionSummaryRow'
-      });
-      eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionSummaryRow`));
-      
-      // Build details to go inside summary row
-      positionSummaryFields = {
-        "position": summary.position,
-        "location": summary.location,
-        "dates": `${prettyDates(summary.startDate)} to ${prettyDates(summary.endDate)}`,
-        "duration": summary.durationPhrase 
-        }
-      Object.entries(positionSummaryFields).forEach((positionDetail) => {
-        const detailType = `positonDetail${positionDetail[0].charAt(0).toUpperCase()}${positionDetail[0].slice(1)}`;
-        eval(`var ${detailType} = document.createElement('p')`);
-        Object.assign( eval(detailType), {
-          className: detailType,
-          textContent: positionDetail[1]
-        });
-        eval(`${detailType}`).classList.add('positionDetail');
-        // eval(`${companyNameCollapsed}${index}PositionSummaryContainer`).appendChild(eval(`${companyNameCollapsed}${index}${detail}`));
-        eval(`${companyNameCollapsed}${index}PositionSummaryRow`).appendChild(eval(`${detailType}`));
-      })
-      
-      //Build postion narrative
-      eval(`var ${companyNameCollapsed}${index}PositionNarrative = document.createElement('p')`);
-      Object.assign( eval(`${companyNameCollapsed}${index}PositionNarrative`), {
-        className: 'expPositionNarrative',
-        textContent: summary.Summary
-      });
-      eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionNarrative`));
-
-      //Build highlight list
-      summary.unique = `${summary.position}${summary.name}${summary.startDate}` //Add unique to summary for matching
-
-      const highlightsFiltered = positionHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
-      if (highlightsFiltered.length > 0) {
-        eval(`var ${companyNameCollapsed}${index}HighlightList = document.createElement('ul')`);
-        Object.assign( eval(`${companyNameCollapsed}${index}HighlightList`), {
-          className: 'expHighlightList',
-        });
-        eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}HighlightList`));
-
-        const highlightsFiltered = positionHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
-        highlightsFiltered.forEach( (highlight,highlightIndex) => {
-          eval(`var ${companyNameCollapsed}${highlightIndex}HighlightItem = document.createElement('li')`);
-          Object.assign( eval(`${companyNameCollapsed}${highlightIndex}HighlightItem`), {
-            className: 'expHighlightItem',
-            textContent: highlight.highlight
-          });
-          eval(`${companyNameCollapsed}${index}HighlightList`).appendChild(eval(`${companyNameCollapsed}${highlightIndex}HighlightItem`));
-        })
+function summarizeByEntity ( listingArray ) {
+  // console.log({listingArray})
+  const entityList = [...new Set(listingArray[1].map( item => item.entity))];
+  console.log({entityList}) // Create an object of unique companies worked and populate with summary data
+  var entitySummary = [];
+  entityList.forEach( (entity, index) => {
+    const regex = RegExp(entity);
+    console.log({regex})
+    const entitySet = listingArray[1].filter(({entity}) => entity.match(regex));
+    // Create entity record if 1 unique entry
+    if ( !entitySet[1]) {
+      var record = {
+        "entity": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).entity,
+        "startDate": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).startDate,
+        "endDate": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).endDate
       }
+    // Create record for entity with multiple entries
+    } else {
+      const entityStartDate = entitySet.map(a => a.startDate).reduce(function(min, cur) {
+        return cur < min ? cur : min;
+      },"21000");
+      const entityEndDate = entitySet.map(a => a.endDate).reduce(function(max, cur) {
+        return cur > max ? cur : max;
+      },"0");
+      var record = {
+        "entity": listingArray[1].find(({ entity }) => entity.match(RegExp(regex))).entity,
+        "startDate":entityStartDate,
+        "endDate":entityEndDate
+      }
+    }
+    calculateDuration(record);//Add durationPhrase
+    entitySummary[index] = record;//Add record to summary object
   });
-});
+  console.log({entitySummary});
+  return entitySummary
+}
+
+function educationFormatter(educationObj) {
+  var eduSort = educationObj[1].sort((a,b) => new Date(b.endDate) - new Date(a.endDate));
+  
+  eduSort.forEach( educationRec => {
+
+    // const gradPhrase = `${}`
+    calculateDuration(educationRec);
+    var educationPhrase = `${educationRec.studyType}, ${educationRec.area}, ${educationRec.institution}, ${educationRec.durationPhrase}`
+    
+    var detailRowContent = `${educationRec.location} from ${prettyDates(educationRec.startDate)} to ${prettyDates(educationRec.endDate)}.`
+    var detailRow = document.createElement('p')
+    Object.assign( detailRow, {
+      id: 'education',
+      className: 'detail',
+      textContent: `${detailRowContent}`
+    })
+
+    var recordSummaryRow = document.createElement('div')
+    Object.assign( recordSummaryRow, {
+      id: 'education',
+      className: 'recordSummaryRow'
+    })
+    
+    var summaryEntity = document.createElement('p')
+    Object.assign( summaryEntity, {
+      className: 'detail entity',
+      id: 'education',
+      textContent: `${educationRec.institution}`
+    })
+    
+    const summaryCredential = document.createElement('p')
+    Object.assign( summaryCredential, {
+      className: 'entityDetail Credential',
+      id: 'education',
+      textContent: `${educationRec.studyType} in ${educationRec.area}`
+    })
+    
+    
+    var recordTextContainer = document.createElement('div');
+    Object.assign( recordTextContainer, {
+      id: 'education',
+      className: 'recordTextContainer'
+    })
+
+    var recordContainer = document.createElement('div');
+    Object.assign( recordContainer, {
+      id: 'education',
+      className: 'recordContainer'
+    })
+    var logoContainer = containerizeLogo( educationRec.institution, 'education', educationRec.file, educationRec.url)
+    
+    recordSummaryRow.append( summaryEntity, summaryCredential);
+    
+    recordTextContainer.appendChild(recordSummaryRow)
+    recordTextContainer.appendChild(detailRow)
+    
+    recordContainer.appendChild(logoContainer);
+    recordContainer.appendChild(recordTextContainer);
+        
+    document.getElementById("education").appendChild(recordContainer)
+  })
+ 
+}
+
+
+function recordContainerizer (instance, className, parentObj, id) {
+  eval(`var ${instance}Container = document.createElement('div')`);
+  Object.assign( eval(`${instance}Container`), {
+    id: id,
+    className: className,
+    
+  });
+  parentObj.append(eval(`${instance}Container`));
+}
+
+function sectionCreator( sectionObj ) {
+  sectionName = sectionObj[0];
+  var sectionTitle = document.createElement('h5')
+  Object.assign(sectionTitle, {
+    className: 'sectionTitle',
+    id: sectionName,
+    textContent: sectionName
+  })
+  var sectionContainerObj = document.createElement('div');
+  Object.assign(sectionContainerObj, {
+    id: sectionName,
+    className: 'sectionContainer'
+  } )
+  sectionContainerObj.appendChild(sectionTitle)
+  main.append(sectionContainerObj);
+}
 
 
 
-
-
-
-
-
-
-main.appendChild(expContainer);
+function containerizeLogo(name, id, file, url) {
+  console.log({file});
+  console.log({url});
+  console.log({id});
+  var logoImg = document.createElement('img');
+  Object.assign( logoImg , {
+    className: 'logoImg',
+    id: id,
+    alt: `${name} Logo`,
+    src: `${file}`
+  });
+  var logoHref = document.createElement('a');
+  Object.assign( logoHref , {
+    className: 'logoHref',
+    id: id,
+    href: url
+  });
+  logoContainer = document.createElement('div');
+  Object.assign( logoContainer , {
+    className: 'logoContainer',
+    id: id
+  });
+  logoHref.appendChild(logoImg);
+  logoContainer.appendChild(logoHref);
+  console.log({logoContainer});
+  return logoContainer
+}
 
 function calculateDuration(array) {
   start = new Date(array.startDate);
@@ -408,242 +440,235 @@ function calculateDuration(array) {
 }
 
 function prettyDates(date) {
-  dateUgly = new Date(date);
+ dateUgly = new Date(date);
+  
+  // dateUgly = Date.parse(date);
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
   ];
+
   const datePrettyMonth = monthNames[parseInt(dateUgly.getMonth())];
   const datePrettyYear = dateUgly.getFullYear();
   const datePretty = `${datePrettyMonth}-${datePrettyYear}`
   return datePretty
 }
 
-// function appendDom(container, jsonData) {
-//   // for (var i = 0; i <jsonData.length; i++) {
-//   //     var $divParent  = $("<div></div>");
-//   //     $divParent.text(jsonData[i].label).attr('id',jsonData[i].id);
-//   //     if (jsonData[i].children) {
-//   //         appendDom($divParent, jsonData[i].children);
-//   //     }
-//   //     container.append($divParent);
-//   // }
-// }
-
-function printAllVals(obj) {
-  for (let k in obj) {
-    if (typeof obj[k] === "string") {
-      // base case, stop recurring
-      var detail = obj[k]
-      console.log({detail});
-    } else {
-
-      var objectK = obj[k];
-      console.log({objectK});
-      printAllVals(obj[k])
-    }
-  }
-}
-
-// function appendDom (target,jsonData) {
-//   console.log({jsonData});
-//   console.log(Object.keys(jsonData).length)
-//   console.log('An Object has been found');
-//   Object.entries(jsonData).forEach( element => {
-//     console.log({element});
-//     console.log( element[0],element[1])
-//     if ( typeof element == 'array' && element.length == 2 ) {
-//       console.log('Terminal');
-//     } else {
-//       console.log("Keep Going");
-//       eval(`var elementName = String(element[0])`);
-//       eval(`var obj${elementName} = document.createElement('div')`);
-//       Object.assign(eval(`obj${elementName}`), {
-//         className: elementName
-//       });
-//       // console.log(eval(`obj${elementName}`));
-//       // console.log({target});
-//       appendDom(eval(`obj${elementName}`), element[1]);
-//     }
-//     target.appendChild(eval(`obj${elementName}`));
-//   });
-// }
-
-// function appendDom (target,jsonData) {
-//   console.log({jsonData});
-//   console.log(Object.keys(jsonData).length)
-//   for (let keyJsonData in jsonData) {
-//     console.log(jsonData[keyJsonData]);
-
-    // for (let keySubKey in keyJsonData) {
-    //   console.log({keyJsonData.keySubKey})
-    // }
-
-    // console.log( typeof element ,element.length, typeof element[1])
-    // console.log(element.hasChildren)
-    // if ( Object.keys(element).length == 2 ) {
-    //   console.log('Terminal');
-    // } else {
-    //   console.log("Keep Going");
-    //   eval(`var elementName = String(element[0])`);
-    //   eval(`var obj${elementName} = document.createElement('div')`);
-    //   Object.assign(eval(`obj${elementName}`), {
-    //     className: elementName
-    //   });
-    //   // console.log(eval(`obj${elementName}`));
-    //   // console.log({target});
-    //   // appendDom(eval(`obj${elementName}`), element[1]);
-    // }
-    // target.appendChild(eval(`obj${elementName}`));
-  // };
-// }
-
 function appendDom (targetObj,data) {
   var dataKeys = Object.keys(data);
   dataKeys.forEach( dataKey => {
-    console.log(dataKey)
     if (!Object.isExtensible(data[dataKey])) {
-      console.log('Cannot extend')
+      //If the current element doesn't expand create a p for content
       var domElement = document.createElement('p');
       Object.assign( domElement, {
         className: dataKey,
         textContent: data[dataKey]
       });
-      console.log({targetObj});
-      console.log(domElement);
       targetObj.appendChild(domElement);
     } else {
-      console.log("I stayed at a Holiday Inn Express");
+      //If the current elelment does expand creat a div and be recursive
       var domElement = document.createElement('div');
       Object.assign( domElement, {
         className: dataKey
       });
-      console.log({targetObj});
-      console.log(domElement);
       targetObj.appendChild(domElement);
       appendDom(domElement, data[dataKey])
     }
   })
 }
 
-// function appendDom (target,data) {
-//   if (!Object.isExtensible(data)) {
-//     console.log('Nope');
-//   } else {
-//     console.log({data})
-//     var dataKeys = Object.keys(data);
-//     console.log({dataKeys});
 
-//     dataKeys.forEach( dataKey => {
-//       console.log({dataKey});
-//       // eval(`var varName = dataKey`)
-//       eval(`var domElement = document.createElement('div')`);
-//       console.log({domElement});
-//       Object.assign( domElement, {
-//         className: dataKey
-//       });
-      
-//       dataSub = data[dataKey];
-//       console.log({dataSub});
-//       dataSubKeys = Object.keys(dataSub);
-//       console.log({dataSubKeys});
-//       dataSubKeys.forEach( dataSubKey => {
-//         // console.log(dataSub[dataSubKey]);
-//         if (Array.isArray(dataSub[dataSubKey])) {
-//           appendDom (domElement,dataSub[dataSubKey]);
-//         } else {
-//           console.log(dataSub[dataSubKey]);
-//         }     
-//       });
-//       target.appendChild(domElement);
-//     });
-//   }
-  
-  // for (sub in subCat) {
-  //   console.log(sub[0]);
-  // }
+function workify(workParsed) {
+  workParsed.forEach( (item) => calculateDuration(item)); //Add durationPhrase
+  workParsed.forEach(job => calculateDuration(job));
+  workParsed.forEach(job => job.prettyStartDate = prettyDates(job.startDate));
+  workParsed.forEach(job => job.prettyEndDate = prettyDates(job.endDate));
 
-  // for (let dataKey in data) {
-  //   console.log(data[dataKey]);
-  //   eval(`var varName = String(dataKey)` );
-  //   console.log({varName});
-  //   eval(`var eleName =  document.createElement('div')`);
-  //   Object.assign( varName, {
-  //     className: varName
-  //   })
-  //   console.log(data[dataKey]);
-  //   for (let dataKeyKey in data[dataKey]) {
-  //     console.log({dataKeyKey});
-  //     console.log(data[dataKey][dataKeyKey]);
-  //     console.log( typeof data[dataKey][dataKeyKey]);
-  //     if (typeof data[dataKey][dataKeyKey] == 'string') {
-  //       console.log('Terminal Node');
-  //     } else {   }
-      
-  //   }
-  //   target.appendChild(eleName)
-  //  }
-// }
-// function appendDom (target,jsonData) {
-//   console.log({jsonData});
-//   console.log(Object.keys(jsonData).length)
-//   if (jsonData[0] == 'string' && jsonData[1] == 'string') {
-//     console.log('No Children')
-//   } else {
-//     console.log('Children')
-//     // eval(`var name = String(jsonData[0])`);
-//     eval(`var obj${jsonData[0]} = document.createElement('div')`);
-//     eval(`var elementName = String(jsonData[0])`);
-//     Object.assign(eval(`obj${jsonData[0]}`), {
-//       className: elementName
-//     });
-//   }
-//   } else if (typeof jsonData == 'object') {
-//     console.log('An Object has been found');
-//     Object.entries(jsonData).forEach( element => {
-//       console.log({element});
-//       eval(`var elementName = String(element[0])`);
-//       eval(`var obj${elementName} = document.createElement('div')`);
-      
-//       Object.assign(eval(`obj${elementName}`), {
-//         className: elementName
-//       });
-//       // console.log(eval(`obj${elementName}`));
-//       // console.log({target});
-//       appendDom(eval(`obj${elementName}`), element[1]);
-//       target.appendChild(eval(`obj${elementName}`));
-//     });
+  // Create an object of unique companies worked and populate with summary data
+  const workSummaryList = [...new Set(workParsed.map( item => item.name))];
+  var workSummary = [];
+  var startDateSort
+  workSummaryList.forEach( (company, index) => {
+    const regex = RegExp(company);
+    const nameSet = workParsed.filter(({name}) => name.match(regex));
+    //Create company Meta Data if company has 1 entry
+    if ( !nameSet[1]) {
+      var record = {
+        "name": company,
+        "startDate": workParsed.find(({ name }) => name.match(RegExp(regex))).startDate,
+        "endDate": workParsed.find(({ name }) => name.match(RegExp(regex))).endDate
+      }
+    // Create company Meta Data and summarize start and end if more than 1 entry
+    } else {
+      const nameStartDate = nameSet.map(a => a.startDate).reduce(function(min, cur) {
+        return cur < min ? cur : min;
+      },"21000");
+      const nameEndDate = nameSet.map(a => a.endDate).reduce(function(max, cur) {
+        return cur > max ? cur : max;
+      },"0");
+      var record = {
+        "name": company,
+        "startDate":nameStartDate,
+        "endDate":nameEndDate
+      }
+    }
+    calculateDuration(record);//Add durationPhrase
+    workSummary[index] = record;//Add record to summary object
+
+  });
+
+  var workSummarySorted = workSummary.sort();
+  workSummary = workSummarySorted;
+  delete workSummary.startDate;
+  delete workSummary.endDate;
+
+  var expTitle = document.createElement('h5');
+  Object.assign( expTitle, {
+    id: 'experience',
+    className: "sectionTitle",
+    textContent: "Experience"
+  } );
+  var sectionContainer = document.createElement('div');
+  sectionContainer.id = "experience"
+  sectionContainer.className = "sectionContainer"
+  sectionContainer.appendChild(expTitle);
+
+
+  //Create Exerience DOM
+  workSummary.forEach( (summary) => {
+    const companyNameCollapsed = summary.name.split(" ").join("");
+
+    //Create company container with logo
+    eval(`var ${companyNameCollapsed}Container = document.createElement('div')`);
+    Object.assign( eval(`${companyNameCollapsed}Container`), {
+      className: 'recordContainer',
+      id: 'experience'
+    });
+    eval(`var ${companyNameCollapsed}LogoContainer = document.createElement('div')`);
+    Object.assign( eval(`${companyNameCollapsed}LogoContainer`), {
+      className: 'logoContainer',
+      id: 'experience'
+    });
+    eval(`var ${companyNameCollapsed}TextContainer = document.createElement('div')`);
+    Object.assign( eval(`${companyNameCollapsed}TextContainer`), {
+      className: 'recordTextContainer',
+      id: 'experience'
+    });
+    eval(`var ${companyNameCollapsed}LogoHref = document.createElement('a')`);
+    Object.assign( eval(`${companyNameCollapsed}LogoHref`), {
+      className: 'logoHref',
+      id: 'experience',
+      href: logoImages.find(({ name }) => name.match(RegExp(companyNameCollapsed))).url
+    });
+
+    eval(`var ${companyNameCollapsed}Logo = document.createElement('img')`);
+    Object.assign( eval(`${companyNameCollapsed}Logo`), {
+      className: 'logoImg',
+      id: 'experience',
+      alt: summary.name,
+      src: logoImages.find(({ name }) => name.match(RegExp(companyNameCollapsed))).file
+    });
+    eval(`${companyNameCollapsed}LogoHref`).appendChild(eval(eval(`${companyNameCollapsed}Logo`)));
+    eval(`${companyNameCollapsed}LogoContainer`).appendChild(eval(eval(`${companyNameCollapsed}LogoHref`)));
+    eval(`${companyNameCollapsed}Container`).appendChild(eval(`${companyNameCollapsed}LogoContainer`));
+    eval(`${companyNameCollapsed}Container`).appendChild(eval(`${companyNameCollapsed}TextContainer`));
+    sectionContainer.appendChild(eval(`${companyNameCollapsed}Container`));
+
+
+    //Create expSummaryRow
+    eval(`var ${companyNameCollapsed}SummaryRow = document.createElement('div')`);
+    Object.assign( eval(`${companyNameCollapsed}SummaryRow`), {
+          className: 'recordSummaryRow',
+    });
     
-//   // }
-// }
+    //Convert to prettyDates for display
+    delete summary.endDate; //= prettyDates(summary.endDate);
+    delete summary.startDate; // = prettyDates(summary.startDate);
 
-// function toJSON(element)
-//     var returnObject;
-//     switch
-//         case: item
-//             returnObject = {
-//                 "id": elementId,
-//                 "width": elementWidth
-//             };
-//             break;
-//         case: default
-//             returnObject = [];
-//             for each child
-//                 returnObject.push(toJSON(child));
-//             break;
-//     return returnObject;
+    //Create entityDetail
+    Object.entries(summary).forEach(detail => {
+      const detailType = `entityDetail${detail[0].charAt(0).toUpperCase()}${detail[0].slice(1)}`;
+      eval(`var ${detailType} = document.createElement('p')`);
+      Object.assign( eval(detailType), {
+        className: detail[0],
+        textContent: detail[1]
+      });
+      eval(detailType).classList.add('entityDetail');
+      eval(`${companyNameCollapsed}SummaryRow`).appendChild(eval(detailType));
+    })
+    eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}SummaryRow`));
 
-// function appendDom(container, jsonData) {
-//   writeDOMElement(container, 'basics','div');
-//   console.log(jsonData);
-//   `var jsonData`
-// }
+    // Create position DOM
+    const positions = workParsed.filter(({name}) => name.match(RegExp(summary.name)));
+    var positionSummaryFields = {}
+    positions.forEach( (summary,index) => {
+      //Build positionSummaryFields 
 
-// function writeDOMElement (parent,child,type) {
-//   // parent = document.querySelector(parent);
-//   eval(`var ${child} = document.createElement(type)`);
-//   Object.assign( eval`${child}`), {
-//     className: child
-//   }
-//   console.log(parent);
-//   main.appendChild(child);
-// }
+        
+        //Build expPositionContainer
+        eval(`var ${companyNameCollapsed}${index}PositionContainer = document.createElement('div')`);
+        Object.assign( eval(`${companyNameCollapsed}${index}PositionContainer`), {
+          className: 'expPositionContainer'
+        });
+        eval(eval(`${companyNameCollapsed}TextContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionContainer`)));
+        
+        //Build expPositionSummaryRow
+        
+        eval(`var ${companyNameCollapsed}${index}PositionSummaryRow = document.createElement('div')`);
+        Object.assign( eval(`${companyNameCollapsed}${index}PositionSummaryRow`), {
+          className: 'expPositionSummaryRow'
+        });
+        eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionSummaryRow`));
+        
+        // Build details to go inside summary row
+        positionSummaryFields = {
+          "position": summary.position,
+          "location": summary.location,
+          "dates": `${prettyDates(summary.startDate)} to ${prettyDates(summary.endDate)}`
+          // "duration": summary.durationPhrase 
+          }
+        Object.entries(positionSummaryFields).forEach((positionDetail) => {
+          const detailType = `positonDetail${positionDetail[0].charAt(0).toUpperCase()}${positionDetail[0].slice(1)}`;
+          eval(`var ${detailType} = document.createElement('p')`);
+          Object.assign( eval(detailType), {
+            className: detailType,
+            textContent: positionDetail[1]
+          });
+          eval(`${detailType}`).classList.add('positionDetail');
+          // eval(`${companyNameCollapsed}${index}PositionSummaryContainer`).appendChild(eval(`${companyNameCollapsed}${index}${detail}`));
+          eval(`${companyNameCollapsed}${index}PositionSummaryRow`).appendChild(eval(`${detailType}`));
+        })
+        
+        //Build postion narrative
+        eval(`var ${companyNameCollapsed}${index}PositionNarrative = document.createElement('p')`);
+        Object.assign( eval(`${companyNameCollapsed}${index}PositionNarrative`), {
+          className: 'expPositionNarrative',
+          textContent: summary.Summary
+        });
+        eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}PositionNarrative`));
+
+        //Build highlight list
+        summary.unique = `${summary.position}${summary.name}${summary.startDate}` //Add unique to summary for matching
+
+        const highlightsFiltered = positionHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
+        if (highlightsFiltered.length > 0) {
+          eval(`var ${companyNameCollapsed}${index}HighlightList = document.createElement('ul')`);
+          Object.assign( eval(`${companyNameCollapsed}${index}HighlightList`), {
+            className: 'expHighlightList',
+          });
+          eval(`${companyNameCollapsed}${index}PositionContainer`).appendChild(eval(`${companyNameCollapsed}${index}HighlightList`));
+
+          const highlightsFiltered = positionHighlights.filter(({unique}) => unique.match(RegExp(summary.unique)));
+          highlightsFiltered.forEach( (highlight,highlightIndex) => {
+            eval(`var ${companyNameCollapsed}${highlightIndex}HighlightItem = document.createElement('li')`);
+            Object.assign( eval(`${companyNameCollapsed}${highlightIndex}HighlightItem`), {
+              className: 'expHighlightItem',
+              textContent: highlight.highlight
+            });
+            eval(`${companyNameCollapsed}${index}HighlightList`).appendChild(eval(`${companyNameCollapsed}${highlightIndex}HighlightItem`));
+          })
+        }
+    });
+  });
+
+  main.appendChild(sectionContainer);
+}
