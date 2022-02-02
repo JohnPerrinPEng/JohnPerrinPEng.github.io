@@ -47,8 +47,10 @@ p {
 .personaContainer {
     display: flex;
     flex-flow: row;
-    background-color: var(--accent-light);
     padding: 4px;
+    color: var(--accent-dark);
+    background-color: var(--brand-blue);
+    
 }
 .personaImgContainer {
     width: var(--porportionSmall);
@@ -108,7 +110,7 @@ p {
     flex-flow: column;
     width: var(--porportionLarge);
     padding: 2px;
-    border-left: 3px solid var(--brand-gray);
+    border-left: 3px solid var(--accent-dark);
 }
 .recordSummaryRow {
     font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
@@ -117,7 +119,8 @@ p {
     flex-flow: nowrap;
     justify-content: space-between;
     padding: 2px;
-    background-color: var(--accent-light);
+    background-color: var(--brand-blue);
+    color: var(--accent-dark);
 }
 .roleContainer {
     /* border-left: 5px solid  #4295cc; */

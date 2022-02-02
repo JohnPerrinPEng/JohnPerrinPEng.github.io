@@ -11,7 +11,7 @@ const resumeData = {
     // },
     "basics": {
       "name": "John Perrin P.Eng.",
-      "label": "Excellence. Forged by experience.",
+      "label": "Excellence. Worldwide.",
       "image": "img/personalProfilePicJohnPerrin.JPG",
       "narrative": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
       "email": "perrin.john@gmail.com",
