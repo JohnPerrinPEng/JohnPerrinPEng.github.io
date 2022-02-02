@@ -13,38 +13,80 @@ LOWERCASE WEB URL = d-din expanded bold */
     --accent-light: #A4D9F5;
     --background-blue: #EAF7FE;
     --background-gray: #EFEFEF;
+    --porportionSmall: 20%;
+    --porportionLarge: 80%;
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Titillium Web Regular, sans-serif;
     color: var(--brand-gray);
     background-color: var(--background-blue);
+    display: flex;
+    flex-flow: column;
+    /* scroll-padding-block-start: 500px; */
 }
-
-/* h5 {
-    font-family:  Titilum Web Bold, sans-serif;
-    text-transform: uppercase;
-}
-h6 {
-    font-family: D-DIN REGULAR, Sans;
-} */
 
 p {
     margin: 2px;
+}
+.navBar {    
+    height: 250px;
+    width: 100%;
+    position: fixed;
+    top: 400;
+    /* margin: 4px; */
+    /* overflow: hidden; */
+    border-radius: 10px;
+    /* z-index: auto ; */
 }
 
 .link {
     color: var(--accent-dark)
 }
 
+.personaContainer {
+    display: flex;
+    flex-flow: row;
+    background-color: var(--accent-light);
+    padding: 4px;
+}
+.personaImgContainer {
+    width: var(--porportionSmall);
+    /* height: inherit; */
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+}
+.personaImg {
+    height: 150px;
+    width: auto;
+    border-radius: 75px;
+}
+
+.personaTextContainer {
+    /* color: var(--background-gray); */
+    padding: 8px;
+}
+.personaName {
+    font-family: Titillim Web, sans-serif;
+    font-weight: bold;
+    font-size: 4em;
+  }
+.personaLabel {
+    font-size: 2em;
+}
 
 .sectionTitle {
     font-family: TITILLIUM WEB BOLD , sans-serif;
     font-size: 2em;
-    width: 20%;
+    width: var(--porportion);
     /* text-align: center; */
     margin-left: 8px;
     text-transform: uppercase;
+    /* scroll-behavior: smooth; */
+    /* scroll-padding-top: 200px; */
+    /* z-index: auto; */
 }
 .recordContainer {
     display: flex;
@@ -52,8 +94,8 @@ p {
     margin: 4px;
 }
 .logoContainer {
-    width: 20%;
-    height: inherit;
+    width: var(--porportionSmall);
+    /* height: inherit; */
     display: flex;  
     align-items: center;
     justify-content: center;
@@ -64,7 +106,7 @@ p {
 }
 .recordTextContainer {
     flex-flow: column;
-    width: 75%;
+    width: var(--porportionLarge);
     padding: 2px;
     border-left: 3px solid var(--brand-gray);
 }
@@ -105,7 +147,7 @@ p {
 .name {
     width: 50%;
 }
-.positonDetailrole {
+.role {
     width: 50%;
 }
 

@@ -10,10 +10,10 @@ const resumeData = {
     //   "theme": "Elegant"
     // },
     "basics": {
-      "name": "John Perrin",
-      "label": "Excellence from the future, TODAY.",
+      "name": "John Perrin P.Eng.",
+      "label": "Excellence. Forged by experience.",
       "image": "img/personalProfilePicJohnPerrin.JPG",
-      "summary": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
+      "narrative": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
       "email": "perrin.john@gmail.com",
       "location": {
         "address": "Bearspaw",
@@ -24,12 +24,20 @@ const resumeData = {
         {
           "url": "https://www.linkedin.com/in/johnperrinpeng/",
           "username": "JohnPerrinPEng",
-          "network": "LinkedIn"
+          "network": "LinkedIn",
+          "image": ""
         },
         {
           "url": "https://github.com/JohnPerrinPEng",
           "username": "JohnPerrinPEng",
-          "network": "github"
+          "network": "github",
+          "image": ""
+        },
+        {
+          "url": "https://www.google.com/maps/place/Bearspaw,+AB/@51.1579186,-114.4174535,10.75z/data=!4m5!3m4!1s0x53716a393a5f46eb:0xc8b883d7efb67147!8m2!3d51.138655!4d-114.3111641",
+          "username": "Bearspaw, Calgary, Alberta, Canada",
+          "network": "IRL",
+          "image": "img/iconGoogleMapsLocationTransparent.png"
         }
       ]
     },
@@ -55,11 +63,11 @@ const resumeData = {
         "file": "img/logoAcadiaUniversityEngineeringTranparent.png"
       }
     ],
-    "volunteering": [
+    "volunteering": [ 
       {
         "role": "Member of Autonomous Systems Advisory Group",
         "entity": "Engineers Canada",
-        "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The purpose is to produce a substantiated research document for the use of Provincial and Territorial regulators in consideration of these same issues within their own jurisdictions.",
+        "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The findings are documented in an Engineers Canada internal document: Autonomous Systems Engineering, Final Paper.",
         "startDate": "2020-09-01",
         "endDate": "2021-12-15",
         "url": "https://engineerscanada.ca/",
@@ -97,7 +105,7 @@ const resumeData = {
         "startDate": "2014-09-01",
         "endDate": "2015-05-15",
         "url": "https://geoconvention.com/",
-        "file": "img/logoGeocnvention2015.png"
+        "file": "img/logoGeoConventionPartnershipTransparent.png"
       }
     ],
     "skills": [
@@ -208,7 +216,7 @@ var roleHighlights = [
 var logoImages = [
   {"name": "UniversityofAlberta", "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png", "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html"},{"name": "AcadiaUniversity", "file": "img/logoAcadiaUniversityEngineeringTranparent.png", "url": "https://engineering.acadiau.ca/Welcome.html"},{"name": "AtomicEnergyCanadaLimited", "file": "img/logoAECL-Stacked-BlueTranparent.png", "url": "https://www.aecl.ca"},{"name": "Schlumberger", "file": "img/logoSchlumbergerTranparent.png", "url": "https://www.slb.com"},{"name": "ConocoPhillips", "file": "img/logoConocoPhillipsTranparent.png", "url": "https://www.conocophillips.com"},{"name": "Tendeka", "file": "img/logoTendekaTransparent.png", "url": "https://www.tendeka.com"},{"name": "Calmena", "file": "img/logoCalmenaTransparent.png", "url": ""},{"name": "EnerplusCorporation", "file": "img/logoEnerplusTranparent.png", "url": "https://www.enerplus.com"},{"name": "NXTEnergySolutions", "file": "img/logoNXTEnergySolutionsTransparent.png", "url": "http://www.nxtenergy.com/"},{"name": "WeatherfordnowStratumReservoir", "file": "img/logoWeatherfordTransparent.png", "url": "https://www.stratumreservoir.com"},{"name": "DIKUWIncorporated", "file": "img/logoDIKUWTransparent.png", "url": "https://www.dikuw.ca"},{"name": "EmersonAutomationSolutions", "file": "img/logoEmersonTransparent.png", "url": "https://www.emerson.com/en-ca/automation/control-and-safety-systems/scada-systems/zedi-cloud-scada-solutions"}
 ];
-
+// var contentContainer = recordContainerizer('content', 'contentContainer', 'content')
 var main = document.querySelector('main');
 const content = JSON.stringify(resumeData);
 const contentParsed = JSON.parse(content);
@@ -225,10 +233,8 @@ workify(workParsed);
 //Pretty format the content
 // for (child of contentParsed.children) {
 Object.entries( contentParsed ).forEach( child => { 
-  // console.log(child); 
   switch ( child[0] ) {
     case "work":
-      // console.log(child);
       // workify(child[1]);
       break
     case "education":
@@ -239,10 +245,52 @@ Object.entries( contentParsed ).forEach( child => {
       sectionCreator(child);  
       volunteeringFormatter(child);
       break
+    case "basics":
+      basicsFormatter(child);
+      break
     default:
-      // console.log('De Fault')
   }
 });
+
+function basicsFormatter(basics) {
+  var navbarObj = document.createElement('div');
+  Object.assign( navbarObj, {
+    id: 'navbar',
+    className: 'navbar',
+    role: 'navigation'
+  })
+  var navBarSpacer = document.createElement('div');
+  Object.assign (navBarSpacer, {
+    id: 'navBarSpacer',
+    className: 'navBarSpace'
+  })
+  var personaObj = recordContainerizer('persona', 'personaContainer', basics[1].name)
+  var personaImgContainer = recordContainerizer('personaImg', 'personaImgContainer', basics[1].name)
+  var personaImg = document.createElement('img');
+  Object.assign( personaImg , {
+    id: basics[1].name,
+    className: 'personaImg',
+    alt: `${basics[1].name} Picture`,
+    src: basics[1].image
+  })
+  var personaTextObj = recordContainerizer('personaText', 'personaTextContainer',  basics[1].name);
+  var personaNameObj = paragraphizer(basics[1].name, basics[1].name, 'personaName' );
+  var personaLabelObj = paragraphizer(basics[1].label, basics[1].name, 'personaLabel')
+  var profilesContainer = recordContainerizer('profiles', 'profilesContainer', basics[1].name);
+  
+  var profiles = basics[1].profiles
+  console.log({profiles})
+
+  personaTextObj.appendChild(personaNameObj);
+  personaTextObj.appendChild(personaLabelObj);
+  personaTextObj.appendChild(profilesContainer);
+  personaImgContainer.appendChild(personaImg);
+  personaObj.appendChild(personaImgContainer);
+  personaObj.appendChild(personaTextObj);
+  navbarObj.appendChild(personaObj);
+  main.prepend(navbarObj);
+  // main.prepend(navBarSpacer);
+}
 
 function volunteeringFormatter(volObj) {
   var volunteerSummary = summarizeByEntity (volObj);
@@ -255,8 +303,7 @@ function volunteeringFormatter(volObj) {
     var recordTextContainer = recordContainerizer('recordText', 'recordTextContainer', summary.entity);
     var recordSummaryRow = recordContainerizer('recordSummaryRow', 'recordSummaryRow', summary.entity);
     var rolesByEntity = roleifyByEntity(volObj[1].filter( item => item.entity == summary.entity));
-    console.log({rolesByEntity})
-
+    
     recordSummaryRow.appendChild( summaryEntity );
     recordSummaryRow.appendChild( summaryDuration );
     recordTextContainer.appendChild( recordSummaryRow )
@@ -283,13 +330,11 @@ function roleifyByEntity(entityRolesObj) {
     roleTextContainer.appendChild(roleSummaryRow);
     var roleNarrative = paragraphizer(role.narrative, role.entity, 'detail narrative');
     roleTextContainer.appendChild(roleNarrative);
-    console.log({roleTextContainer})
   });
   return roleTextContainer
 }
 
 function summarizeByEntity ( listingArray ) {
-  // console.log({listingArray})
   const entityList = [...new Set(listingArray[1].map( item => item.entity))];
   var entitySummary = [];
   entityList.forEach( (entity, index) => {
@@ -333,14 +378,14 @@ function educationFormatter(educationObj) {
 
     // const gradPhrase = `${}`
     calculateDuration(educationRec);
-    var detailRowContent = `${educationRec.location} from ${prettyDates(educationRec.startDate)} to ${prettyDates(educationRec.endDate)}.`
-    var detailRow = document.createElement('p')
-    Object.assign( detailRow, {
+    
+    var detailLocation = paragraphizer(educationRec.location, educationRec.entity, 'location')
+    var detailDates = paragraphizer(`${prettyDates(educationRec.startDate)} to ${prettyDates(educationRec.endDate)}.`, educationRec.entity, 'dates');
+    var roleSummaryRow = document.createElement('p')
+    Object.assign( roleSummaryRow, {
       id: `${educationRec.entity}`,
-      className: 'summaryDetail',
-      textContent: `${detailRowContent}`
+      className: 'roleSummaryRow',
     })
-
     var recordSummaryRow = document.createElement('div')
     Object.assign( recordSummaryRow, {
       id: `${educationRec.entity}`,
@@ -376,10 +421,12 @@ function educationFormatter(educationObj) {
     var logoContainer = containerizeLogo( educationRec.entity, educationRec.entity, educationRec.file, educationRec.url)
     
     recordSummaryRow.append( summaryEntity, summaryCredential);
+    recordTextContainer.appendChild(recordSummaryRow);
     
-    recordTextContainer.appendChild(recordSummaryRow)
-    recordTextContainer.appendChild(detailRow)
-    
+    roleSummaryRow.appendChild(detailLocation);
+    roleSummaryRow.appendChild(detailDates);
+    recordTextContainer.appendChild(roleSummaryRow);
+
     recordContainer.appendChild(logoContainer);
     recordContainer.appendChild(recordTextContainer);
         
@@ -453,7 +500,6 @@ function containerizeLogo(entity, id, file, url) {
 }
 
 function calculateDuration(array) {
-  console.log({array})
   start = new Date(array.startDate);
   end = new Date(array.endDate);
   var durationYears;
@@ -474,9 +520,9 @@ function calculateDuration(array) {
 }
 
 function prettyDates(date) {
- dateUgly = new Date(date);
   
-  // dateUgly = Date.parse(date);
+  dateArray = date.split("-");
+  dateUgly = new Date(dateArray[0], parseInt(dateArray[1])-1 , dateArray[2]);
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
   ];
