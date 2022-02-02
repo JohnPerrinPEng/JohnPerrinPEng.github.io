@@ -18,12 +18,15 @@ LOWERCASE WEB URL = d-din expanded bold */
 }
 
 body {
-    font-family: Titillium Web Regular, sans-serif;
+    font-family: Titillium Web, sans-serif;
     color: var(--brand-gray);
     background-color: var(--background-blue);
     display: flex;
     flex-flow: column;
     /* scroll-padding-block-start: 500px; */
+}
+footer {
+    text-align: center;
 }
 
 p {
@@ -73,14 +76,15 @@ p {
 .personaName {
     font-family: Titillim Web, sans-serif;
     font-weight: bold;
-    font-size: 4em;
-  }
-.personaLabel {
     font-size: 2em;
-}
+  }
+/* .personaLabel {
+    font-size: 2em;
+} */
 
 .sectionTitle {
-    font-family: TITILLIUM WEB BOLD , sans-serif;
+    font-family: Titillium Web, sans-serif;
+    font-style: bold;
     font-size: 2em;
     width: var(--porportion);
     /* text-align: center; */
@@ -113,8 +117,9 @@ p {
     border-left: 3px solid var(--accent-dark);
 }
 .recordSummaryRow {
-    font-family: TITILLIUM WEB SEMIBOLD, sans-serif;
-    font-size: 1.5em;
+    font-family: D-Din, sans-serif;
+    font-weight: bolder;
+    /* font-size: 1.5em; */
     display: flex;
     flex-flow: nowrap;
     justify-content: space-between;
@@ -132,7 +137,9 @@ p {
 }
 .roleSummaryRow {
     /* width: inherit; */
-    font-family: D-Din Bold, sans;
+    /* font-family: D-Din, sans; */
+    font-weight: bold;
+    /* font-size: 1em; */
     /* font-size: 1em; */
     display: flex;
     flex-flow: nowrap;

@@ -11,7 +11,7 @@ const resumeData = {
     // },
     "basics": {
       "name": "John Perrin P.Eng.",
-      "label": "Excellence. Worldwide.",
+      "label": "Relentless pursuit of excellence.",
       "image": "img/personalProfilePicJohnPerrin.JPG",
       "narrative": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
       "email": "perrin.john@gmail.com",
@@ -160,7 +160,7 @@ const resumeData = {
       {"name": "Schlumberger", "role": "Field Engineer", "Summary": "Tranferred to Kuwait Land location ", "location": "Ahmadi, Kuwait", "startDate": "2002-01-01", "endDate": "2002-09-15"},
       {"name": "Schlumberger", "role": "Senior Field Engineer", "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2002-09-15", "endDate": "2003-02-01"},
       {"name": "Schlumberger", "role": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-02-01", "endDate": "2004-10-01"},
-      {"name": "Schlumberger", "role": "General Field Engineer", "Summary": "Promoted to General Field Enginer after fulfill GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-12-01", "endDate": "2004-10-01"},
+      {"name": "Schlumberger", "role": "General Field Engineer", "Summary": "Promoted to General Field Enginer (GFE) after fulfilling GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-12-01", "endDate": "2004-10-01"},
       {"name": "Schlumberger", "role": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Calgary, Canada", "startDate": "2004-10-01", "endDate": "2006-04-01"},
       {"name": "Schlumberger", "role": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs.", "location": "Calgary, Canada", "startDate": "2006-04-01", "endDate": "2006-12-12"},
       {"name": "ConocoPhillips", "role": "Petrophysicist", "Summary": "Recruited by former clients in the Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.", "location": "Calgary, Canada", "startDate": "2007-05-01", "endDate": "2008-04-20"},
@@ -170,7 +170,7 @@ const resumeData = {
       {"name": "Enerplus Corporation", "role": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, Canada", "startDate": "2012-12-18", "endDate": "2015-06-02"},
       {"name": "Weatherford now Stratum Reservoir", "role": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, Canada", "startDate": "2017-04-01", "endDate": "2018-06-21"},
       {"name": "DIKUW Incorporated", "role": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2022-01-24"},
-      {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA Technical Center of Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary “Comprehensive Framework for Field Operations Project Management and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
+      {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA\'s - Center of Technical Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary \"Comprehensive Framework for Field Operations Project Management\" and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
       {"name": "Emerson Automation Solutions", "role": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-05-01", "endDate": "2019-08-01"},
       {"name": "Emerson Automation Solutions", "role": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-08-01", "endDate": "2020-02-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, Canada", "startDate": "2020-02-01", "endDate": "2020-10-01"},
@@ -180,19 +180,20 @@ const resumeData = {
 
 var roleHighlights = [
   {"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Succesfully identified failure mode of Primary Heat Transport Pump Seal."},
-  {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"Designed, simulated, fabricated, instrumented and reported results for CANDU6 30 Year Retube Operations"},
+  {"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Wrote code to analyze Seal Test Rig data from LabView data files."},
+  {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"As a long term R&D Project I designed, simulated, fabricated, instrumented and reported results for \"CANDU6 30 Year Retube Operations\""},
   {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"Revised and published CANDU 6 Fuel Channel Installation Manual"},
   {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Emergency Project: Fuel Channel End Cap Sealing Assembly designed, fabricated, bench test, documented, and shipped in 10 days."},
   {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Introduction of CAE Tools including SolidWorks, ProEngineer and Ansys to AECL Reactor Services."},
   {"unique":"Supervisor, A-Side Fuel Channel InstallationAtomic Energy Canada Limited1998-06-15", "highlight":"1st Restoration of Calandria after 7 years cold storage"},
   {"unique":"Supervisor, Sub-Assembly and ComponentsAtomic Energy Canada Limited1999-02-01", "highlight":"World Record, at the time, of CANDU 6 Fuel Channel Component for Cernavoda Unit 2"},
-  {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Completed Open Hole Wireline Breakout Job including Imaging, Formation Testing, and Walkaway Seismic with radios in dual dogleg well."},
+  {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Completed Open Hole Wireline Breakout Job including Imaging, Formation Testing, and Walkaway Seismic controlling mobile Vibroseis unit radios in dual dogleg well."},
   {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Partipated as Field Tester of Seismic While Drilling technology"},
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st Well Logging in Hail Region of Saudi Arabia in living memory"},
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st JP Offshore Logging Job."},
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Seconded to remote Khafji, Saudi Arabia location."},
-  {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Attended Cased Hole Formation Resistivity Field Tester Training at Schlumberger Clamart"},
-  {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in Kuwait."},
+  {"unique":"Field EngineerSchlumberger2002-01-01", "highlight":"Attended Cased Hole Formation Resistivity Field Tester Training at Schlumberger Wireline R&D Headquarters Clamart, France"},
+  {"unique":"Field EngineerSchlumberger2002-01-01", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in Kuwait."},
   {"unique":"Senior Field EngineerSchlumberger2002-09-15", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in United Arab Emirates."},
   {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Successfully overcame differentially stuck casing guns to avoid arrest by Abu Dhabi National Police."},
   {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Wireline Unit, Explosive Bunker and Schlumberger Doghouse move from Raniworo to Gus Androes on-time and on-budget"},
@@ -294,7 +295,6 @@ function basicsFormatter(basics) {
 
 function volunteeringFormatter(volObj) {
   var volunteerSummary = summarizeByEntity (volObj);
-  // var rolesObj = roleifyByEntity(volObj);
   volunteerSummary.forEach( summary => {
     var recordContainer = recordContainerizer( 'record' , 'recordContainer', summary.entity );
     var logoContainer = containerizeLogo(summary.entity, summary.entity, summary.file, summary.url);
