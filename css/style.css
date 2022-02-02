@@ -146,7 +146,7 @@ p {
     width: var(--porportionSmall);
     /* height: inherit; */
     display: flex;  
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
 }
 .logoImg {
@@ -201,12 +201,12 @@ p {
 }
 .positonDetailLocation {
     width: 20em;
-    /* text-align: right; */
+    text-align: right;
 }
 
 .positonDetailDates {
     width: 20em;
-    /* text-align: right; */
+    text-align: right;
 }
 ::marker  {
     content: '+';
