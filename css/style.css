@@ -18,7 +18,8 @@ LOWERCASE WEB URL = d-din expanded bold */
 }
 
 body {
-    font-family: Titillium Web, sans-serif;
+    font-family: roboto, sans-serif;
+    font-weight: light;
     color: var(--brand-gray);
     background-color: var(--background-blue);
     display: flex;
@@ -28,6 +29,17 @@ body {
 footer {
     text-align: center;
 }
+
+a {
+    font-family: d-din, sans-serif;
+    font-stretch: expanded;C
+    /* color: var(--accent-dark) */
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:active { text-decoration: none; }
 
 p {
     margin: 2px;
@@ -43,9 +55,7 @@ p {
     /* z-index: auto ; */
 }
 
-/* .link {
-    color: var(--accent-dark)
-} */
+
 
 .personaContainer {
     display: flex;
@@ -107,10 +117,10 @@ p {
     padding-right: .5em; */
     margin-right: .5em;
     background-color: var(--background-blue);
-    border-radius: 1em;
+    border-radius: .5em;
 }
 .profileImg {
-    height: 1em;
+    height: 1.5em;
     padding-top: .5em;
     padding-bottom: .5em;
     margin-left: .5em;
@@ -121,6 +131,7 @@ p {
     width: auto;
     white-space: nowrap;
     margin-right: .5em;
+    color: var(--brand-blue);
 }
 
 .sectionTitle {
