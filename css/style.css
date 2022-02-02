@@ -43,9 +43,9 @@ p {
     /* z-index: auto ; */
 }
 
-.link {
+/* .link {
     color: var(--accent-dark)
-}
+} */
 
 .personaContainer {
     display: flex;
@@ -75,6 +75,9 @@ p {
 }
 
 .personaTextContainer {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
     /* color: var(--background-gray); */
     padding: 8px;
     margin: 0;
@@ -92,6 +95,7 @@ p {
       flex-flow: row;
       justify-content: space-between;
       width: 100%;
+      color: var(--brand-blue);
   }
 
 .profileContainer {
@@ -99,16 +103,24 @@ p {
     flex-flow: row;
     justify-content: space-around;
     align-items: center;
-    padding: 1em;
-    margin: 1em;
+    /* padding-left: .5em;
+    padding-right: .5em; */
+    margin-right: .5em;
     background-color: var(--background-blue);
     border-radius: 1em;
 }
-.profileContainer .logoImg {
-    height: 2em;
+.profileImg {
+    height: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-left: .5em;
 }
+
 .profileUserName {
-    padding: 1px;
+    /* padding: 1px; */
+    width: auto;
+    white-space: nowrap;
+    margin-right: .5em;
 }
 
 .sectionTitle {
@@ -145,7 +157,7 @@ p {
     flex-flow: column;
     width: var(--porportionLarge);
     padding: 2px;
-    border-left: 3px solid var(--accent-dark);
+    /* border-left: 3px solid var(--accent-dark); */
 }
 .recordSummaryRow {
     font-family: D-Din, sans-serif;
@@ -158,12 +170,13 @@ p {
     background-color: var(--brand-blue);
     color: var(--accent-dark);
     border-radius: .5em;
+    flex: 2 1 0;
 }
 .roleContainer {
     /* border-left: 5px solid  #4295cc; */
     /* border: 2px solid #4295cc; */
     /* width: 99%; */
-    margin-left: auto;
+    margin-left: 0;
     margin-right: 0;
     ;
 }
@@ -179,20 +192,22 @@ p {
     padding: 3px;
     background-color:  var(--background-gray);
     border-radius: .5em;
-    
-    /* justify-content: right; */
+    margin-top: 2px;
+    /* flex: 2 1 0; */
+}
+.positonDetailRole {
+    width: 50em;
+    /* text-align: right; */
+}
+.positonDetailLocation {
+    width: 20em;
+    /* text-align: right; */
 }
 
+.positonDetailDates {
+    width: 20em;
+    /* text-align: right; */
+}
 ::marker  {
     content: '+';
-}
-.name {
-    width: 50%;
-}
-.role {
-    width: 50%;
-}
-
-.expHighlightList {
-    margin: 2px;
 }
