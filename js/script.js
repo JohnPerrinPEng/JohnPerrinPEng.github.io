@@ -25,19 +25,25 @@ const resumeData = {
           "url": "https://www.linkedin.com/in/johnperrinpeng/",
           "username": "JohnPerrinPEng",
           "network": "LinkedIn",
-          "image": ""
+          "image": "img/iconLinkedInTranparent.png"
         },
         {
           "url": "https://github.com/JohnPerrinPEng",
           "username": "JohnPerrinPEng",
           "network": "github",
-          "image": ""
+          "image": "img/iconGitHubTransparent.png"
         },
         {
           "url": "https://www.google.com/maps/place/Bearspaw,+AB/@51.1579186,-114.4174535,10.75z/data=!4m5!3m4!1s0x53716a393a5f46eb:0xc8b883d7efb67147!8m2!3d51.138655!4d-114.3111641",
-          "username": "Bearspaw, Calgary, Alberta, Canada",
+          "username": "Calgary, Canada",
           "network": "IRL",
-          "image": "img/iconGoogleMapsLocationTransparent.png"
+          "image": "img/iconMapLocation.png"
+        },
+        {
+          "url": "mailto:perrin.john@gmail.com",
+          "username": "perrin.john@gmail.com",
+          "network": "E-Mail",
+          "image": "img/iconEmailTransparent.png"
         }
       ]
     },
@@ -159,7 +165,7 @@ const resumeData = {
       {"name": "Schlumberger", "role": "Field Engineer", "Summary": "", "location": "Al Khobar, Saudi Arabia", "startDate": "2000-10-16", "endDate": "2002-01-01"},
       {"name": "Schlumberger", "role": "Field Engineer", "Summary": "Tranferred to Kuwait Land location ", "location": "Ahmadi, Kuwait", "startDate": "2002-01-01", "endDate": "2002-09-15"},
       {"name": "Schlumberger", "role": "Senior Field Engineer", "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2002-09-15", "endDate": "2003-02-01"},
-      {"name": "Schlumberger", "role": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-02-01", "endDate": "2004-10-01"},
+      {"name": "Schlumberger", "role": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings to TOTAL ABK Executive Team.", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-02-01", "endDate": "2004-10-01"},
       {"name": "Schlumberger", "role": "General Field Engineer", "Summary": "Promoted to General Field Enginer (GFE) after fulfilling GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, United Arab Emirates", "startDate": "2003-12-01", "endDate": "2004-10-01"},
       {"name": "Schlumberger", "role": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Calgary, Canada", "startDate": "2004-10-01", "endDate": "2006-04-01"},
       {"name": "Schlumberger", "role": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs.", "location": "Calgary, Canada", "startDate": "2006-04-01", "endDate": "2006-12-12"},
@@ -170,7 +176,7 @@ const resumeData = {
       {"name": "Enerplus Corporation", "role": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, Canada", "startDate": "2012-12-18", "endDate": "2015-06-02"},
       {"name": "Weatherford now Stratum Reservoir", "role": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, Canada", "startDate": "2017-04-01", "endDate": "2018-06-21"},
       {"name": "DIKUW Incorporated", "role": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2022-01-24"},
-      {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA\'s - Center of Technical Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary \"Comprehensive Framework for Field Operations Project Management\" and general knowledge of how to deploy technical resources for successful commercial outcomes.’", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
+      {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA\'s - Center of Technical Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary \"Comprehensive Framework for Field Operations Project Management\" and general knowledge of how to deploy technical resources for successful commercial outcomes.", "location": "Calgary, Canada", "startDate": "2019-03-01", "endDate": "2019-09-15"},
       {"name": "Emerson Automation Solutions", "role": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-05-01", "endDate": "2019-08-01"},
       {"name": "Emerson Automation Solutions", "role": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, Canada", "startDate": "2019-08-01", "endDate": "2020-02-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, Canada", "startDate": "2020-02-01", "endDate": "2020-10-01"},
@@ -187,7 +193,7 @@ var roleHighlights = [
   {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Introduction of CAE Tools including SolidWorks, ProEngineer and Ansys to AECL Reactor Services."},
   {"unique":"Supervisor, A-Side Fuel Channel InstallationAtomic Energy Canada Limited1998-06-15", "highlight":"1st Restoration of Calandria after 7 years cold storage"},
   {"unique":"Supervisor, Sub-Assembly and ComponentsAtomic Energy Canada Limited1999-02-01", "highlight":"World Record, at the time, of CANDU 6 Fuel Channel Component for Cernavoda Unit 2"},
-  {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Completed Open Hole Wireline Breakout Job including Imaging, Formation Testing, and Walkaway Seismic controlling mobile Vibroseis unit radios in dual dogleg well."},
+  {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Completed Open Hole Wireline Breakout Job in dual dogleg well including Quad Combo, Imaging, Formation Testing, and Walkaway Seismic with radio controlled mobile Vibroseis."},
   {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Partipated as Field Tester of Seismic While Drilling technology"},
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st Well Logging in Hail Region of Saudi Arabia in living memory"},
   {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st JP Offshore Logging Job."},
@@ -204,11 +210,11 @@ var roleHighlights = [
   {"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Innovation: Shepherded operations team in the engineering development of techniques and equipment for a 10 client, multi-million-dollar Lean Gas Cycling Joint Industry Partnership."},
   {"unique":"Team Lead, Customer Solutions Engineering for Zedi IoT SaaSEmerson Automation Solutions2019-05-01", "highlight":"Assesed and initiated improvement of field delivery operations in first 60 days"},
   {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Create, deploy, and direct continuous improvement of a Perfect Execution approach to Zedi Automation Engineering."},
-  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Initiate, select, oversee training and integrate personnnel from Emerson’s Best Cost Center location in Pune, India resources from into the North America based Automation Engineering Team."},
+  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Initiate, select, oversee training and integrate personnnel from Emerson\'s Best Cost Center location in Pune, India resources from into the North America based Automation Engineering Team."},
   {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"APEGA Responsible Member for Automation Engineering under Emerson Electric Canada Limited (EECL) Permit to Practice."},
   {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Successful introduction of StackOverflow for Teams as Automation Engineering knowledge repository."},
   {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"1st formal Automation Engineering team training in 3rd party pollling engine."},
-  {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Increased named pursuit funnel, 6X in 1 YEAR (Total potential Contract Value approximately USD25M)"},
+  {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Increased named pursuit funnel, 6X in 1 YEAR (Estimated Total Contract Value USD25M)"},
   {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Selected, trained and supported 20 Total IoT SaaS Subject Matter Experts in 12 Months via MS Teams"},
   {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Delivered IoT SaaS Sales Awareness Training to ~1000 Emerson Business Development and Partner Staff  around the world."},
   {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Established meaningful working relationships with Regional Executives and key Business Development resources around the world without the opportunity to meet in person."},
@@ -279,15 +285,24 @@ function basicsFormatter(basics) {
   var personaLabelObj = paragraphizer(basics[1].label, basics[1].name, 'personaLabel')
   var profilesContainer = recordContainerizer('profiles', 'profilesContainer', basics[1].name);
   
-  var profiles = basics[1].profiles
-  console.log({profiles})
+  var profilesContainer = recordContainerizer('profiles', 'profilesContainer', basics[1].name);
+  var profiles = basics[1].profiles;
+  profiles.forEach( profile => {
+    var profileContainer = recordContainerizer('profile', 'profileContainer', basics[1].name)
+    var logoContainer = containerizeLogo(profile.network, basics[1].name, profile.image, profile.url)
+    var profileUserName = paragraphizer(profile.username, basics[1].name, 'profileUserName')
+    logoContainer.append(profileUserName);
+    profileContainer.append(logoContainer);
+    profilesContainer.append(profileContainer);
+  })
+  
 
   personaTextObj.appendChild(personaNameObj);
   personaTextObj.appendChild(personaLabelObj);
   personaTextObj.appendChild(profilesContainer);
   personaImgContainer.appendChild(personaImg);
-  personaObj.appendChild(personaImgContainer);
   personaObj.appendChild(personaTextObj);
+  personaObj.appendChild(personaImgContainer);
   navbarObj.appendChild(personaObj);
   main.prepend(navbarObj);
   // main.prepend(navBarSpacer);
@@ -380,7 +395,7 @@ function educationFormatter(educationObj) {
     calculateDuration(educationRec);
     
     var detailLocation = paragraphizer(educationRec.location, educationRec.entity, 'location')
-    var detailDates = paragraphizer(`${prettyDates(educationRec.startDate)} to ${prettyDates(educationRec.endDate)}.`, educationRec.entity, 'dates');
+    var detailDates = paragraphizer(`${prettyDates(educationRec.startDate)} to ${prettyDates(educationRec.endDate)}`, educationRec.entity, 'dates');
     var roleSummaryRow = document.createElement('p')
     Object.assign( roleSummaryRow, {
       id: `${educationRec.entity}`,

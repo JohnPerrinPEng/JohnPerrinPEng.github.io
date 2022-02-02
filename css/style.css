@@ -50,9 +50,14 @@ p {
 .personaContainer {
     display: flex;
     flex-flow: row;
+    justify-content: space-between;
     padding: 4px;
     color: var(--accent-dark);
     background-color: var(--brand-blue);
+    border-radius: 1em;
+    /* border-color: var(--brand-blue);
+    border-width: 1em;
+    border-style: solid; */
     
 }
 .personaImgContainer {
@@ -72,15 +77,39 @@ p {
 .personaTextContainer {
     /* color: var(--background-gray); */
     padding: 8px;
+    margin: 0;
+    color: var(--accent-dark);
 }
 .personaName {
     font-family: Titillim Web, sans-serif;
     font-weight: bold;
     font-size: 2em;
+    /* margin: 4px; */
   }
-/* .personaLabel {
-    font-size: 2em;
-} */
+
+.profilesContainer {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-between;
+      width: 100%;
+  }
+
+.profileContainer {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+    margin: 1em;
+    background-color: var(--background-blue);
+    border-radius: 1em;
+}
+.profileContainer .logoImg {
+    height: 2em;
+}
+.profileUserName {
+    padding: 1px;
+}
 
 .sectionTitle {
     font-family: Titillium Web, sans-serif;
@@ -89,6 +118,8 @@ p {
     width: var(--porportion);
     /* text-align: center; */
     margin-left: 8px;
+    margin-top: 8px;
+    margin-bottom: 4px;
     text-transform: uppercase;
     /* scroll-behavior: smooth; */
     /* scroll-padding-top: 200px; */
@@ -126,6 +157,7 @@ p {
     padding: 2px;
     background-color: var(--brand-blue);
     color: var(--accent-dark);
+    border-radius: .5em;
 }
 .roleContainer {
     /* border-left: 5px solid  #4295cc; */
@@ -146,7 +178,7 @@ p {
     justify-content: space-between;
     padding: 3px;
     background-color:  var(--background-gray);
-    border-radius: 1em;
+    border-radius: .5em;
     
     /* justify-content: right; */
 }
