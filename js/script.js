@@ -1,240 +1,508 @@
+//data to be replaced with file load when time allows
+const resumeData = {
+
+  "basics": {
+    "name": "John Perrin P.Eng.",
+    "label": "Relentless pursuit of excellence.",
+    "image": "img/personalProfilePicJohnPerrin.JPG",
+    "narrative": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
+    "email": "perrin.john@gmail.com",
+    "location": {
+      "address": "Bearspaw",
+      "city": "Calgary",
+      "countryCode": "Canada"
+    },
+    "profiles": [
+      {
+        "url": "https://www.linkedin.com/in/johnperrinpeng/",
+        "username": "JohnPerrinPEng",
+        "network": "LinkedIn",
+        "image": "img/iconLinkedInTranparent.png"
+      },
+      {
+        "url": "https://github.com/JohnPerrinPEng",
+        "username": "JohnPerrinPEng",
+        "network": "github",
+        "image": "img/iconGitHubTransparent.png"
+      },
+      {
+        "url": "https://www.google.com/maps/place/Bearspaw,+AB/@51.1579186,-114.4174535,10.75z/data=!4m5!3m4!1s0x53716a393a5f46eb:0xc8b883d7efb67147!8m2!3d51.138655!4d-114.3111641",
+        "username": "Calgary, AB, CAN",
+        "network": "IRL",
+        "image": "img/iconMapLocation.png"
+      },
+      {
+        "url": "mailto:perrin.john@gmail.com",
+        "username": "perrin.john@gmail.com",
+        "network": "E-Mail",
+        "image": "img/iconEmailTransparent.png"
+      }
+    ]
+  },
+  "education": [
+    {
+      "endDate": "1997-05-01",
+      "startDate": "1993-09-01",
+      "area": "Mechanical Engineering",
+      "studyType": "Bachelors of Science (BSc)",
+      "entity": "University of Alberta",
+      "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html",
+      "location": "Edmonton, AB, CAN",
+      "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png"
+    },
+    {
+      "endDate": "1993-05-01",
+      "startDate": "1991-09-01",
+      "area": "Engineering",
+      "studyType": "Certificate of Applied Science (CAS)",
+      "entity": "Acadia University",
+      "url": "https://engineering.acadiau.ca/Welcome.html",
+      "location": "Wolfville, NS, CAN",
+      "file": "img/logoAcadiaUniversityEngineeringTranparent.png"
+    }
+  ],
+  "volunteering": [ 
+    {
+      "role": "Member of Autonomous Systems Advisory Group",
+      "entity": "Engineers Canada",
+      "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The findings are documented in an Engineers Canada internal document: Autonomous Systems Engineering, Final Paper.",
+      "startDate": "2020-09-01",
+      "endDate": "2021-12-15",
+      "url": "https://engineerscanada.ca/",
+      "file": "img/logoEngineersCanada.png"
+    },
+    {
+      "role": "Big Brother",
+      "entity": "Big Brothers and Big Sisters of Calgary & Area",
+      "startDate": "2008-05-01",
+      "endDate": "2013-05-15",
+      "url": "https://bbbscalgary.ca/",
+      "file": "img/logoBBBSCalgary.png"
+    },
+    {
+      "role": "President",
+      "entity": "Canadian Progress Club - Calgary Downtown Chapter",
+      "startDate": "2010-09-01",
+      "endDate": "2011-08-30",
+      "url": "https://www.progressclub.ca/",
+      "file": "img/logoCanadianProgressClub.png"
+
+    },
+    {
+      "role": "Member",
+      "entity": "Canadian Progress Club - Calgary Downtown Chapter",
+      "startDate": "2006-09-01",
+      "endDate": "2011-08-30",
+      "url": "https://www.progressclub.ca/",
+      "file": "img/logoCanadianProgressClub.png"
+
+    },
+    {
+      "role": "2015 Session Co-Chair: New Ideas in Western Canadian Resource Plays",
+      "entity": "GeoConvention Partnership",
+      "startDate": "2014-09-01",
+      "endDate": "2015-05-15",
+      "url": "https://geoconvention.com/",
+      "file": "img/logoGeoConventionPartnershipTransparent.png"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Leadership",
+      "keywords": ["Strategic Thinking", "Empower Team Members", "Effective Communication"]
+    },
+    {
+      "name": "Business Devlopment",
+      "keywords": ["Closing Profitable Deals", "Market Assessment", "Stakeholder Engagement"]
+    },
+     {
+      "name": "Continuous Improvement",
+      "keywords": ["Goalsetting", "Change Management", "Ongoing Assessment"]
+    },
+     {
+      "name": "Engineering",
+      "keywords": ["Industrial Automation", "Petroleum Reservoir Assessment", "Machine Design"]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Pathfinder Award",
+      "awarder": "Scouts Canada and Governor General of Canada"
+    },
+    {
+      "title": "Man of The Year",
+      "awarder": "Canadian Progress Club - Calgary Downtown"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Golf"
+    },
+    {
+      "name": "Sailing"
+    },
+    {
+      "name": "Comedy"
+    },
+    {
+      "name": "Volunteering"
+    }
+  ],
+  "work": [
+    {
+      "name": "Atomic Energy Canada Limited",
+      "role": "Intern for Fluid Sealing Technology Unit",
+      "Summary": "Joint role as Intern for Fluid Sealing Technology Unit and Tutor for Deep River Science Academy.",
+      "location": "Chalk River, ON, CAN",
+      "startDate": "1996-05-01",
+      "endDate": "1996-08-31"
+    },
+    {
+      "name": "Atomic Energy Canada Limited",
+      "role": "Reactor Services Engineer",
+      "Summary": "I joined Reactor Services to research, build, inspect and repair CANDU Nuclear Fuel Channel Components.",
+      "location": "Mississauga, ON, Canada",
+      "startDate": "1997-05-28",
+      "endDate": "2000-07-09",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    { 
+      "name": "Atomic Energy Canada Limited",
+      "role": "Supervisor, Calandria Restoration",
+      "Summary": "Our team of 6 Canadians was tasked with establishing productive working relationships with 50 person Romanian crew, establishing a clean room, equipment set up and preparation of the Cernavoda 2 Calandia for Fuel Channel installation.",
+      "location": "Cernavoda, ROU",
+      "startDate": "1998-06-15",
+      "endDate": "1998-08-30",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Atomic Energy Canada Limited",
+      "role": "Supervisor, Sub-Assembly and Components",
+      "Summary": "Our team of 8 Canadians was tasked with successful installation of Fuel Channels in the Cernavoda 2 Nuclear Reactor. I lead a team of 10 Romanians in selecting all fuel channel components from availible stock, cleaning, inspection and sub-assembly fabrication operations. All operations were subject to stringent Quality Assurance verification by oursleves and third-party inspectors. I was also tasked with payroll reporting, morale initiatives and solely responsible for operations tear down including retruning loaner equipment to Canada.",
+      "location": "Cernavoda, ROU",
+      "startDate": "1999-02-01",
+      "endDate": "1999-07-31",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "Field Engineer Trainee",
+      "Summary": "Joined Schlumberger as a Wireline Field Engineer Trainee and intially worked out of Shreveport Training Center and went on trianing jobs with Shreveport Wireline location.",
+      "location": "Shreveport, LA, USA",
+      "startDate": "2000-07-09",
+      "endDate": "2000-10-15",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "Field Engineer",
+      "Summary": "First field location assignment for Reservioir Evaliation Wireline (REW).",
+      "location": "Al Khobar, SAU",
+      "startDate": "2000-10-16",
+      "endDate": "2002-01-01",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "Field Engineer",
+      "Summary": "Tranferred to Kuwait Land location as Field Engineer.",
+      "location": "Ahmadi, KWT",
+      "startDate": "2002-01-01",
+      "endDate": "2002-09-15",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "Senior Field Engineer",
+      "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.",
+      "location": "Abu Dhabi, UAE",
+      "startDate": "2002-09-15",
+      "endDate": "2003-02-01",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh",
+      "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings to TOTAL ABK Executive Team.",
+      "location": "Abu Dhabi, UAE",
+      "startDate": "2003-02-01",
+      "endDate": "2004-10-01",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "General Field Engineer",
+      "Summary": "Promoted to General Field Enginer (GFE) after fulfilling GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significant business outcome",
+      "location": "Abu Dhabi, UAE",
+      "startDate": "2003-12-01",
+      "endDate": "2004-10-01",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "Technical Sales Engineer - Wireline",
+      "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales ability in previous role.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2004-10-01",
+      "endDate": "2006-04-01",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "Schlumberger",
+      "role": "OFS Field Engineer Recruiter",
+      "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2006-04-01",
+      "endDate": "2006-12-12",
+      // "highlights": [
+      //   {"narrative": ""},
+      //   {"narrative": "" }
+      // ]
+    },
+    {
+      "name": "ConocoPhillips",
+      "role": "Petrophysicist",
+      "Summary": "Recruited by former clients in the Exploration Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2007-05-01",
+      "endDate": "2008-04-20",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Tendeka",
+      "role": "Vice President North and South America for Sensornet",
+      "Summary": "Recruited as Vice President North and South America for Sensornet with a mandate to grow the business in the region.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2008-05-01",
+      "endDate": "2009-09-01",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Tendeka",
+      "role": "Regional Manager Canada and Strategic Relationship Manager",
+      "Summary": "Promoted to Strategic Relationship Manager and Regional Manager Canada on the combination of Sensornet, SwellFifix and WellTechnogolgy by Kenda Capital in June 2009.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2009-09-01",
+      "endDate": "2010-12-13",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Calmena",
+      "role": "Microseismic Business Development Manager",
+      "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2010-12-13",
+      "endDate": "2012-12-18",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Enerplus Corporation",
+      "role": "Staff Petrophysical Engineer",
+      "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2012-12-18",
+      "endDate": "2015-06-02",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Weatherford now Stratum Reservoir",
+      "role": "Product Line Manager - Laboratories and Sub-Surface Consulting",
+      "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2017-04-01",
+      "endDate": "2018-06-21",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "DIKUW Incorporated",
+      "role": "Founder",
+      "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2019-03-01",
+      "endDate": "2022-01-24",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "DIKUW Incorporated",
+      "role": "Consulting Engagement to CEDA\'s - Center of Technical Excellence",
+      "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary \"Comprehensive Framework for Field Operations Project Management\" and general knowledge of how to deploy technical resources for successful commercial outcomes.", "location": "Calgary, AB, CAN",
+      "startDate": "2019-03-01",
+      "endDate": "2019-09-15",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Emerson Automation Solutions",
+      "role": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS",
+      "Summary": "",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2019-05-01",
+      "endDate": "2019-08-01",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Emerson Automation Solutions",
+      "role": "Manager, Automation Engineering for Zedi IoT SaaS",
+      "Summary": "",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2019-08-01",
+      "endDate": "2020-02-01",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" },
+        {"narrative": "" },
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Emerson Automation Solutions",
+      "role": "Director, Automation Engineering for Zedi IoT SaaS",
+      "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support",
+      "location": "Calgary, AB, CAN",
+      "startDate": "2020-02-01",
+      "endDate": "2020-10-01",
+      "highlights": [
+        {"narrative": ""},
+        {"narrative": "" },
+        {"narrative": "" },
+        {"narrative": "" }
+      ]
+    },
+    {
+      "name": "Emerson Automation Solutions",
+      "role": "Director, International Business Development for Zedi IoT SaaS",
+      "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", 
+      "location": "Calgary, AB, CAN", "startDate": "2020-10-01", "endDate": "2021-09-30",
+      "highlights": [
+        {"narrative": "Increased named pursuit funnel, 6X in 1 YEAR (Estimated Total Contract Value USD25M)"},
+        {"narrative": "Selected, trained and supported 20 Total IoT SaaS Subject Matter Experts in 12 Months via MS Teams" },
+        {"narrative": "Delivered IoT SaaS Sales Awareness Training to ~1000 Emerson Business Development and Partner Staff  around the world." },
+        {"narrative": "Established meaningful working relationships with Regional Executives and key Business Development resources around the world without the opportunity to meet in person." }
+      ]
+    },
+    ]
+}
+
+var roleHighlights = [
+{"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Succesfully identified failure mode of Primary Heat Transport Pump Seal."},
+{"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Wrote code to analyze Seal Test Rig data from LabView data files."},
+{"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"As a long term R&D Project I designed, simulated, fabricated, instrumented and reported results for \"CANDU6 30 Year Retube Operations\""},
+{"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"Revised and published CANDU 6 Fuel Channel Installation Manual"},
+{"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Emergency Project: Fuel Channel End Cap Sealing Assembly designed, fabricated, bench test, documented, and shipped in 10 days."},
+{"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Introduction of CAE Tools including SolidWorks, ProEngineer and Ansys to AECL Reactor Services."},
+{"unique":"Supervisor, A-Side Fuel Channel InstallationAtomic Energy Canada Limited1998-06-15", "highlight":"1st Restoration of Calandria after 7 years cold storage"},
+{"unique":"Supervisor, Sub-Assembly and ComponentsAtomic Energy Canada Limited1999-02-01", "highlight":"World Record, at the time, of CANDU 6 Fuel Channel Component for Cernavoda Unit 2"},
+{"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Completed Open Hole Wireline Breakout Job in dual dogleg well including Quad Combo, Imaging, Formation Testing, and Walkaway Seismic with radio controlled mobile Vibroseis."},
+{"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Partipated as Field Tester of Seismic While Drilling technology"},
+{"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st Well Logging in Hail Region of Saudi Arabia in living memory"},
+{"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st JP Offshore Logging Job."},
+{"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Seconded to remote Khafji, Saudi Arabia location."},
+{"unique":"Field EngineerSchlumberger2002-01-01", "highlight":"Attended Cased Hole Formation Resistivity Field Tester Training at Schlumberger Wireline R&D Headquarters Clamart, France"},
+{"unique":"Field EngineerSchlumberger2002-01-01", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in Kuwait."},
+{"unique":"Senior Field EngineerSchlumberger2002-09-15", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in United Arab Emirates."},
+{"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Successfully overcame differentially stuck casing guns to avoid arrest by Abu Dhabi National Police."},
+{"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Wireline Unit, Explosive Bunker and Schlumberger Doghouse move from Raniworo to Gus Androes on-time and on-budget"},
+{"unique":"General Field EngineerSchlumberger2003-12-01", "highlight":"Successfilly completed and presented results of Ultrasonic Imaging Tool Research And Development project on Effects of Sensor Sub Misallignment"},
+{"unique":"Technical Sales Engineer – WirelineSchlumberger2004-10-01", "highlight":"Increased Top Line revenue from named accounts from CAD9.5M to CAD12.5M"},
+{"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Improved P&L: Through a no holds barred approach to topline revenue generation and variable-cost control, EBITDA moved from heavily negative to positive."},
+{"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Cultural Change: Focusing on team and personal accountability, I led an increase in compliance and process discipline reflected in improved QHSSE KPIs and COR Audit performance."},
+{"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Innovation: Shepherded operations team in the engineering development of techniques and equipment for a 10 client, multi-million-dollar Lean Gas Cycling Joint Industry Partnership."},
+{"unique":"Team Lead, Customer Solutions Engineering for Zedi IoT SaaSEmerson Automation Solutions2019-05-01", "highlight":"Assesed and initiated improvement of Automation Project Operations in first 60 days"},
+{"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Create, deploy, and direct continuous improvement of a Perfect Execution approach to Zedi Automation Engineering."},
+{"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Initiate, select, oversee training and integrate personnnel from Emerson\'s Best Cost Center location in Pune, India resources from into the North America based Automation Engineering Team."},
+{"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"APEGA Responsible Member for Automation Engineering under Emerson Electric Canada Limited (EECL) Permit to Practice."},
+{"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Successful introduction of StackOverflow for Teams as Automation Engineering knowledge repository."},
+{"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"1st formal Automation Engineering team training in 3rd party pollling engine."},
+{"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Increased named pursuit funnel, 6X in 1 YEAR (Estimated Total Contract Value USD25M)"},
+{"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Selected, trained and supported 20 Total IoT SaaS Subject Matter Experts in 12 Months via MS Teams"},
+{"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Delivered IoT SaaS Sales Awareness Training to ~1000 Emerson Business Development and Partner Staff  around the world."},
+{"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Established meaningful working relationships with Regional Executives and key Business Development resources around the world without the opportunity to meet in person."},
+];
+
+var logoImages = [
+{"name": "UniversityofAlberta", "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png", "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html"},{"name": "AcadiaUniversity", "file": "img/logoAcadiaUniversityEngineeringTranparent.png", "url": "https://engineering.acadiau.ca/Welcome.html"},{"name": "AtomicEnergyCanadaLimited", "file": "img/logoAECL-Stacked-BlueTranparent.png", "url": "https://www.aecl.ca"},{"name": "Schlumberger", "file": "img/logoSchlumbergerTranparent.png", "url": "https://www.slb.com"},{"name": "ConocoPhillips", "file": "img/logoConocoPhillipsTranparent.png", "url": "https://www.conocophillips.com"},{"name": "Tendeka", "file": "img/logoTendekaTransparent.png", "url": "https://www.tendeka.com"},{"name": "Calmena", "file": "img/logoCalmenaTransparent.png", "url": ""},{"name": "EnerplusCorporation", "file": "img/logoEnerplusTranparent.png", "url": "https://www.enerplus.com"},{"name": "NXTEnergySolutions", "file": "img/logoNXTEnergySolutionsTransparent.png", "url": "http://www.nxtenergy.com/"},{"name": "WeatherfordnowStratumReservoir", "file": "img/logoWeatherfordTransparent.png", "url": "https://www.stratumreservoir.com"},{"name": "DIKUWIncorporated", "file": "img/logoDIKUWTransparent.png", "url": "https://www.dikuw.ca"},{"name": "EmersonAutomationSolutions", "file": "img/logoEmersonTransparent.png", "url": "https://www.emerson.com/en-ca/automation/control-and-safety-systems/scada-systems/zedi-cloud-scada-solutions"}
+];
+
 //Create Footer Text
 var footer = document.querySelector('footer');
 var footerP = document.createElement('p');
 footerP.textContent = 'Copyright © ' + new Date().getFullYear() + ' John Perrin P.Eng.';
 footer.appendChild(footerP);
+//intialize main
+
+var main = document.getElementById('main');
 
 
-const resumeData = {
-    // "meta": {
-    //   "theme": "Elegant"
-    // },
-    "basics": {
-      "name": "John Perrin P.Eng.",
-      "label": "Relentless pursuit of excellence.",
-      "image": "img/personalProfilePicJohnPerrin.JPG",
-      "narrative": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
-      "email": "perrin.john@gmail.com",
-      "location": {
-        "address": "Bearspaw",
-        "city": "Calgary",
-        "countryCode": "Canada"
-      },
-      "profiles": [
-        {
-          "url": "https://www.linkedin.com/in/johnperrinpeng/",
-          "username": "JohnPerrinPEng",
-          "network": "LinkedIn",
-          "image": "img/iconLinkedInTranparent.png"
-        },
-        {
-          "url": "https://github.com/JohnPerrinPEng",
-          "username": "JohnPerrinPEng",
-          "network": "github",
-          "image": "img/iconGitHubTransparent.png"
-        },
-        {
-          "url": "https://www.google.com/maps/place/Bearspaw,+AB/@51.1579186,-114.4174535,10.75z/data=!4m5!3m4!1s0x53716a393a5f46eb:0xc8b883d7efb67147!8m2!3d51.138655!4d-114.3111641",
-          "username": "Calgary, AB, CAN",
-          "network": "IRL",
-          "image": "img/iconMapLocation.png"
-        },
-        {
-          "url": "mailto:perrin.john@gmail.com",
-          "username": "perrin.john@gmail.com",
-          "network": "E-Mail",
-          "image": "img/iconEmailTransparent.png"
-        }
-      ]
-    },
-    "education": [
-      {
-        "endDate": "1997-05-01",
-        "startDate": "1993-09-01",
-        "area": "Mechanical Engineering",
-        "studyType": "Bachelors of Science (BSc)",
-        "entity": "University of Alberta",
-        "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html",
-        "location": "Edmonton, AB, CAN",
-        "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png"
-      },
-      {
-        "endDate": "1993-05-01",
-        "startDate": "1991-09-01",
-        "area": "Engineering",
-        "studyType": "Certificate of Applied Science (CAS)",
-        "entity": "Acadia University",
-        "url": "https://engineering.acadiau.ca/Welcome.html",
-        "location": "Wolfville, NS, CAN",
-        "file": "img/logoAcadiaUniversityEngineeringTranparent.png"
-      }
-    ],
-    "volunteering": [ 
-      {
-        "role": "Member of Autonomous Systems Advisory Group",
-        "entity": "Engineers Canada",
-        "narrative": "Member of an advisory group created to help guide the development of a detailed research paper on Autonomous Systems by defining scope and key terms, reviewing materials, and providing feedback and direction. The findings are documented in an Engineers Canada internal document: Autonomous Systems Engineering, Final Paper.",
-        "startDate": "2020-09-01",
-        "endDate": "2021-12-15",
-        "url": "https://engineerscanada.ca/",
-        "file": "img/logoEngineersCanada.png"
-      },
-      {
-        "role": "Big Brother",
-        "entity": "Big Brothers and Big Sisters of Calgary & Area",
-        "startDate": "2008-05-01",
-        "endDate": "2013-05-15",
-        "url": "https://bbbscalgary.ca/",
-        "file": "img/logoBBBSCalgary.png"
-      },
-      {
-        "role": "President",
-        "entity": "Canadian Progress Club - Calgary Downtown Chapter",
-        "startDate": "2010-09-01",
-        "endDate": "2011-08-30",
-        "url": "https://www.progressclub.ca/",
-        "file": "img/logoCanadianProgressClub.png"
 
-      },
-      {
-        "role": "Member",
-        "entity": "Canadian Progress Club - Calgary Downtown Chapter",
-        "startDate": "2006-09-01",
-        "endDate": "2011-08-30",
-        "url": "https://www.progressclub.ca/",
-        "file": "img/logoCanadianProgressClub.png"
-
-      },
-      {
-        "role": "2015 Session Co-Chair: New Ideas in Western Canadian Resource Plays",
-        "entity": "GeoConvention Partnership",
-        "startDate": "2014-09-01",
-        "endDate": "2015-05-15",
-        "url": "https://geoconvention.com/",
-        "file": "img/logoGeoConventionPartnershipTransparent.png"
-      }
-    ],
-    "skills": [
-      {
-        "name": "Leadership",
-        "keywords": ["Strategic Thinking", "Empower Team Members", "Effective Communication"]
-      },
-      {
-        "name": "Business Devlopment",
-        "keywords": ["Closing Profitable Deals", "Market Assessment", "Stakeholder Engagement"]
-      },
-       {
-        "name": "Continuous Improvement",
-        "keywords": ["Goalsetting", "Change Management", "Ongoing Assessment"]
-      },
-       {
-        "name": "Engineering",
-        "keywords": ["Industrial Automation", "Petroleum Reservoir Assessment", "Machine Design"]
-      }
-    ],
-    "awards": [
-      {
-        "title": "Pathfinder Award",
-        "awarder": "Scouts Canada and Governor General of Canada"
-      },
-      {
-        "title": "Man of The Year",
-        "awarder": "Canadian Progress Club - Calgary Downtown"
-      }
-    ],
-    "interests": [
-      {
-        "name": "Golf"
-      },
-      {
-        "name": "Sailing"
-      },
-      {
-        "name": "Comedy"
-      },
-      {
-        "name": "Volunteering"
-      }
-    ],
-    "work": [
-      {"name": "Atomic Energy Canada Limited", "role": "Intern for Fluid Sealing Technology Unit", "Summary": "Joint role as Intern for Fluid Sealing Technology Unit and Tutor for Deep River Science Academy.", "location": "Chalk River, ON, CAN", "startDate": "1996-05-01", "endDate": "1996-08-31"},
-      {"name": "Atomic Energy Canada Limited", "role": "Reactor Services Engineer", "Summary": "I joined Reactor Services to research, build, inspect and repair CANDU Nuclear Fuel Channel Components.", "location": "Mississauga, ON, Canada", "startDate": "1997-05-28", "endDate": "2000-07-09"},
-      {"name": "Atomic Energy Canada Limited", "role": "Supervisor, Calandria Restoration", "Summary": "", "location": "Cernavoda, ROU", "startDate": "1998-06-15", "endDate": "1998-08-30"},
-      {"name": "Atomic Energy Canada Limited", "role": "Supervisor, Sub-Assembly and Components", "Summary": "", "location": "Cernavoda, ROU", "startDate": "1999-02-01", "endDate": "1999-07-31"},
-      {"name": "Schlumberger", "role": "Field Engineer Trainee", "Summary": "Joined Schlumberger as a Wireline Field Engineer Trainee and progressed through the ranks to General Field Engineer in Charge over 4 years in Saudi Arabia, Kuwait and United Arab Emirates. Subsequently transferred to Calgary in Wireline Sales and finally promoted to Canada Recruiter for one year.", "location": "Shreveport, LA, USA", "startDate": "2000-07-09", "endDate": "2000-10-15"},
-      {"name": "Schlumberger", "role": "Field Engineer", "Summary": "", "location": "Al Khobar, SAU", "startDate": "2000-10-16", "endDate": "2002-01-01"},
-      {"name": "Schlumberger", "role": "Field Engineer", "Summary": "Tranferred to Kuwait Land location ", "location": "Ahmadi, KWT", "startDate": "2002-01-01", "endDate": "2002-09-15"},
-      {"name": "Schlumberger", "role": "Senior Field Engineer", "Summary": "Transferred to Abu Dhabi Offshore location promoted to Senior Field Engineer.", "location": "Abu Dhabi, UAE", "startDate": "2002-09-15", "endDate": "2003-02-01"},
-      {"name": "Schlumberger", "role": "Wireline Engineer in Charge for TOTAL Abu Al Bukhoosh", "Summary": "Designated as SLB Engineer In Charge for TOTAL Al Bukhoosh field on the basis of strong relationship with TOTAL personnel in town and on the rig, excellent field service quality, and informal leadership amongst peers. I fulfilled the sales role for TOTAL, performed all Rig Based Wireline Operations,    coordinated movement of people, tools and materials for Rig and Rigless TOTAL operations, and fulfilled role of Service Quality Manager including preparation and presentation of periodic Service Quality Meetings to TOTAL ABK Executive Team.", "location": "Abu Dhabi, UAE", "startDate": "2003-02-01", "endDate": "2004-10-01"},
-      {"name": "Schlumberger", "role": "General Field Engineer", "Summary": "Promoted to General Field Enginer (GFE) after fulfilling GFE Control requirements including extensive Technical, Management, Personnel, Finance and Personnel knowledge written and oral examinations in addition to completion of major independant project with confirmed significant business outcome.project with significcant ", "location": "Abu Dhabi, UAE", "startDate": "2003-12-01", "endDate": "2004-10-01"},
-      {"name": "Schlumberger", "role": "Technical Sales Engineer – Wireline", "Summary": "Transferred to Canada and promoted to Wireline Sales Engineer on the basis of performance in role and demonstrated capability in sales as EIC for Total.", "location": "Calgary, AB, CAN", "startDate": "2004-10-01", "endDate": "2006-04-01"},
-      {"name": "Schlumberger", "role": "OFS Field Engineer Recruiter", "Summary": "Promoted to Recruiter role by SLB Global OFS HR Manager with a mandate to fulfill the Field Engineer, Product Center Graduate Hybrid and Field Engineer Intern programs.", "location": "Calgary, AB, CAN", "startDate": "2006-04-01", "endDate": "2006-12-12"},
-      {"name": "ConocoPhillips", "role": "Petrophysicist", "Summary": "Recruited by former clients in the Exploration Technical Excellence department to perform regional petrophysical studies as part of a multidisciplinary team.", "location": "Calgary, AB, CAN", "startDate": "2007-05-01", "endDate": "2008-04-20"},
-      {"name": "Tendeka", "role": "Vice President North and South America for Senornet", "Summary": "Recruited as Vice President North and South America for Sensornet Limited.", "location": "Calgary, AB, CAN", "startDate": "2008-05-01", "endDate": "2009-09-01"},
-      {"name": "Tendeka", "role": "Regional Manager Canada and Strategic Relationship Manager", "Summary": "Promoted to Strategic Relationship Manager and Regional Manager Canada on the combination of Sensornet, SwellFifix and WellTechnogolgy by Kenda Capital in June 2009.", "location": "Calgary, AB, CAN", "startDate": "2009-09-01", "endDate": "2010-12-13"},
-      {"name": "Calmena", "role": "Microseismic Business Development Manager", "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.", "location": "Calgary, AB, CAN", "startDate": "2010-12-13", "endDate": "2012-12-18"},
-      {"name": "Enerplus Corporation", "role": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, AB, CAN", "startDate": "2012-12-18", "endDate": "2015-06-02"},
-      {"name": "Weatherford now Stratum Reservoir", "role": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, AB, CAN", "startDate": "2017-04-01", "endDate": "2018-06-21"},
-      {"name": "DIKUW Incorporated", "role": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Calgary, AB, CAN", "startDate": "2019-03-01", "endDate": "2022-01-24"},
-      {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA\'s - Center of Technical Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary \"Comprehensive Framework for Field Operations Project Management\" and general knowledge of how to deploy technical resources for successful commercial outcomes.", "location": "Calgary, AB, CAN", "startDate": "2019-03-01", "endDate": "2019-09-15"},
-      {"name": "Emerson Automation Solutions", "role": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, AB, CAN", "startDate": "2019-05-01", "endDate": "2019-08-01"},
-      {"name": "Emerson Automation Solutions", "role": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, AB, CAN", "startDate": "2019-08-01", "endDate": "2020-02-01"},
-      {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, AB, CAN", "startDate": "2020-02-01", "endDate": "2020-10-01"},
-      {"name": "Emerson Automation Solutions", "role": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Calgary, AB, CAN", "startDate": "2020-10-01", "endDate": "2021-09-30"},
-      ]
-}
-
-var roleHighlights = [
-  {"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Succesfully identified failure mode of Primary Heat Transport Pump Seal."},
-  {"unique":"Intern for Fluid Sealing Technology UnitAtomic Energy Canada Limited1996-05-01", "highlight":"Wrote code to analyze Seal Test Rig data from LabView data files."},
-  {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"As a long term R&D Project I designed, simulated, fabricated, instrumented and reported results for \"CANDU6 30 Year Retube Operations\""},
-  {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"Revised and published CANDU 6 Fuel Channel Installation Manual"},
-  {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Emergency Project: Fuel Channel End Cap Sealing Assembly designed, fabricated, bench test, documented, and shipped in 10 days."},
-  {"unique":"Reactor Services EngineerAtomic Energy Canada Limited1997-05-28", "highlight":"1st Introduction of CAE Tools including SolidWorks, ProEngineer and Ansys to AECL Reactor Services."},
-  {"unique":"Supervisor, A-Side Fuel Channel InstallationAtomic Energy Canada Limited1998-06-15", "highlight":"1st Restoration of Calandria after 7 years cold storage"},
-  {"unique":"Supervisor, Sub-Assembly and ComponentsAtomic Energy Canada Limited1999-02-01", "highlight":"World Record, at the time, of CANDU 6 Fuel Channel Component for Cernavoda Unit 2"},
-  {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Completed Open Hole Wireline Breakout Job in dual dogleg well including Quad Combo, Imaging, Formation Testing, and Walkaway Seismic with radio controlled mobile Vibroseis."},
-  {"unique":"Field Engineer TraineeSchlumberger2000-07-09", "highlight":"Partipated as Field Tester of Seismic While Drilling technology"},
-  {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st Well Logging in Hail Region of Saudi Arabia in living memory"},
-  {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"1st JP Offshore Logging Job."},
-  {"unique":"Field EngineerSchlumberger2000-10-16", "highlight":"Seconded to remote Khafji, Saudi Arabia location."},
-  {"unique":"Field EngineerSchlumberger2002-01-01", "highlight":"Attended Cased Hole Formation Resistivity Field Tester Training at Schlumberger Wireline R&D Headquarters Clamart, France"},
-  {"unique":"Field EngineerSchlumberger2002-01-01", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in Kuwait."},
-  {"unique":"Senior Field EngineerSchlumberger2002-09-15", "highlight":"Performed 1st successful Cased Hole Formation Resistivity Tool measurement in United Arab Emirates."},
-  {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Successfully overcame differentially stuck casing guns to avoid arrest by Abu Dhabi National Police."},
-  {"unique":"Wireline Engineer in Charge for TOTAL Abu Al BukhooshSchlumberger2003-02-01", "highlight":"Wireline Unit, Explosive Bunker and Schlumberger Doghouse move from Raniworo to Gus Androes on-time and on-budget"},
-  {"unique":"General Field EngineerSchlumberger2003-12-01", "highlight":"Successfilly completed and presented results of Ultrasonic Imaging Tool Research And Development project on Effects of Sensor Sub Misallignment"},
-  {"unique":"Technical Sales Engineer – WirelineSchlumberger2004-10-01", "highlight":"Increased Top Line revenue from named accounts from CAD9.5M to CAD12.5M"},
-  {"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Improved P&L: Through a no holds barred approach to topline revenue generation and variable-cost control, EBITDA moved from heavily negative to positive."},
-  {"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Cultural Change: Focusing on team and personal accountability, I led an increase in compliance and process discipline reflected in improved QHSSE KPIs and COR Audit performance."},
-  {"unique":"Product Line Manager - Reservoir Services (Laboratories and Sub-Surface Consulting)Weatherford now Stratum Reservoir2017-04-01", "highlight":"Innovation: Shepherded operations team in the engineering development of techniques and equipment for a 10 client, multi-million-dollar Lean Gas Cycling Joint Industry Partnership."},
-  {"unique":"Team Lead, Customer Solutions Engineering for Zedi IoT SaaSEmerson Automation Solutions2019-05-01", "highlight":"Assesed and initiated improvement of Automation Project Operations in first 60 days"},
-  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Create, deploy, and direct continuous improvement of a Perfect Execution approach to Zedi Automation Engineering."},
-  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Initiate, select, oversee training and integrate personnnel from Emerson\'s Best Cost Center location in Pune, India resources from into the North America based Automation Engineering Team."},
-  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"APEGA Responsible Member for Automation Engineering under Emerson Electric Canada Limited (EECL) Permit to Practice."},
-  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"Successful introduction of StackOverflow for Teams as Automation Engineering knowledge repository."},
-  {"unique":"Director, Automation Engineering for Zedi IoT SaaSEmerson Automation Solutions2020-02-01", "highlight":"1st formal Automation Engineering team training in 3rd party pollling engine."},
-  {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Increased named pursuit funnel, 6X in 1 YEAR (Estimated Total Contract Value USD25M)"},
-  {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Selected, trained and supported 20 Total IoT SaaS Subject Matter Experts in 12 Months via MS Teams"},
-  {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Delivered IoT SaaS Sales Awareness Training to ~1000 Emerson Business Development and Partner Staff  around the world."},
-  {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Established meaningful working relationships with Regional Executives and key Business Development resources around the world without the opportunity to meet in person."},
-];
-
-var logoImages = [
-  {"name": "UniversityofAlberta", "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png", "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html"},{"name": "AcadiaUniversity", "file": "img/logoAcadiaUniversityEngineeringTranparent.png", "url": "https://engineering.acadiau.ca/Welcome.html"},{"name": "AtomicEnergyCanadaLimited", "file": "img/logoAECL-Stacked-BlueTranparent.png", "url": "https://www.aecl.ca"},{"name": "Schlumberger", "file": "img/logoSchlumbergerTranparent.png", "url": "https://www.slb.com"},{"name": "ConocoPhillips", "file": "img/logoConocoPhillipsTranparent.png", "url": "https://www.conocophillips.com"},{"name": "Tendeka", "file": "img/logoTendekaTransparent.png", "url": "https://www.tendeka.com"},{"name": "Calmena", "file": "img/logoCalmenaTransparent.png", "url": ""},{"name": "EnerplusCorporation", "file": "img/logoEnerplusTranparent.png", "url": "https://www.enerplus.com"},{"name": "NXTEnergySolutions", "file": "img/logoNXTEnergySolutionsTransparent.png", "url": "http://www.nxtenergy.com/"},{"name": "WeatherfordnowStratumReservoir", "file": "img/logoWeatherfordTransparent.png", "url": "https://www.stratumreservoir.com"},{"name": "DIKUWIncorporated", "file": "img/logoDIKUWTransparent.png", "url": "https://www.dikuw.ca"},{"name": "EmersonAutomationSolutions", "file": "img/logoEmersonTransparent.png", "url": "https://www.emerson.com/en-ca/automation/control-and-safety-systems/scada-systems/zedi-cloud-scada-solutions"}
-];
-// var contentContainer = recordContainerizer('content', 'contentContainer', 'content')
-var main = document.querySelector('main');
 const content = JSON.stringify(resumeData);
 const contentParsed = JSON.parse(content);
 
+// Add sideNav
+sideNav();
+
 var contentDomObj = document.createElement('div');
 appendDom( contentDomObj, contentParsed ) //Add all resume content to contentDOMObj
-// main.insertBefore(contentDomObj, main.firstChild);
-//Pretty up the Experience portion
 const work = JSON.stringify(resumeData.work);
 var workParsed = JSON.parse(work).sort((a,b) => new Date(b.endDate) - new Date(a.endDate));
 workify(workParsed);
+
+
 
 
 //Pretty format the content
@@ -259,17 +527,50 @@ Object.entries( contentParsed ).forEach( child => {
   }
 });
 
-function basicsFormatter(basics) {
-  var navbarObj = document.createElement('div');
-  Object.assign( navbarObj, {
-    id: 'navbar',
-    className: 'navbar',
-    role: 'navigation'
+/* Set the width of the side navigation to 250px */
+// function openNav() {
+//   document.getElementById("mySidenav").style.width = "250px";
+// }
+
+/* Set the width of the side navigation to 0 */
+// function closeNav() {
+//   document.getElementById("mySidenav").style.width = "0";
+// }
+
+function sideNav() {
+  var resumeNavContainer = recordContainerizer('mySidenav', 'container', 'mySidenavContainer');
+  mySidenav = document.createElement('div');
+  Object.assign(mySidenav, {
+    id: 'mySidenav',
+    className: 'sidenav'
   })
-  var navBarSpacer = document.createElement('div');
-  Object.assign (navBarSpacer, {
-    id: 'navBarSpacer',
-    className: 'navBarSpace'
+  
+  mySidenavButtonList = Object.keys(contentParsed);
+  mySidenavButtonList.forEach( button => {
+    button = buttonize(button, `${button}Button`, 'mySidenavButton');
+    mySidenav.appendChild(button);
+  });
+  console.log({mySidenav})
+  resumeNavContainer.appendChild(mySidenav)
+  var body = document.getElementById('body')
+  console.log({body})
+  main.prepend(resumeNavContainer);
+}
+
+function buttonize(text, id, className) {
+  button = Object.assign( document.createElement('b'), {
+    textContent: text,
+    className: className,
+    id:id
+  })
+  return button
+}
+
+function basicsFormatter(basics) {
+  var resumeHeaderObj = document.createElement('div');
+  Object.assign( resumeHeaderObj, {
+    id: 'resumeHeader',
+    className: 'header'
   })
   var personaObj = recordContainerizer('persona', 'personaContainer', basics[1].name)
   var personaImgContainer = recordContainerizer('personaImg', 'personaImgContainer', basics[1].name)
@@ -300,7 +601,6 @@ function basicsFormatter(basics) {
       alt: `${profile.network} Logo`,
       src: profile.image
     });
-    console.log({profileImg});
     var profileUserName = paragraphizer(profile.username, basics[1].name, 'profileUserName')
     profileContainer.appendChild(profileImg);
     profileContainer.appendChild(profileUserName);
@@ -316,9 +616,9 @@ function basicsFormatter(basics) {
   personaImgContainer.appendChild(personaImg);
   personaObj.appendChild(personaTextObj);
   personaObj.appendChild(personaImgContainer);
-  navbarObj.appendChild(personaObj);
-  main.prepend(navbarObj);
-  // main.prepend(navBarSpacer);
+  resumeHeaderObj.appendChild(personaObj);
+  main.prepend(resumeHeaderObj);
+
 }
 
 function volunteeringFormatter(volObj) {
@@ -777,6 +1077,6 @@ function workify(workParsed) {
         }
     });
   });
-
+  console.log({main});
   main.appendChild(sectionContainer);
 }
