@@ -1,6 +1,15 @@
 //Create Footer Text
 var footer = document.querySelector('footer');
 var footerP = document.createElement('p');
+
+// Create todays date in preferred format.
+var presentDate = new Date();
+var dd = String(presentDate.getDate()).padStart(2, '0');
+var mm = String(presentDate.getMonth() + 1).padStart(2, '0'); //January is 0!
+var yyyy = presentDate.getFullYear();
+
+presentDate = yyyy + '-' + mm + '-' + dd;
+
 footerP.textContent = 'Copyright © ' + new Date().getFullYear() + ' John Perrin P.Eng.';
 footer.appendChild(footerP);
 
@@ -173,13 +182,13 @@ const resumeData = {
       {"name": "Calmena", "role": "Microseismic Business Development Manager", "Summary": "Joined a hungry oil field services start up and grew our share of the Microseismic Fracture Monitoring and Horizontal Completion Technology market in Canada.", "location": "Calgary, AB, CAN", "startDate": "2010-12-13", "endDate": "2012-12-18"},
       {"name": "Enerplus Corporation", "role": "Staff Petrophysical Engineer", "Summary": "Recruited by the Chief Geoscientist to expand the rigorous use of Petrophysics across Enerplus. Established a foundation of Petrophysical knowledge throughout the organization by performing advanced analysis and delivering formal and informal training to geoscientists, engineers and managers.", "location": "Calgary, AB, CAN", "startDate": "2012-12-18", "endDate": "2015-06-02"},
       {"name": "Weatherford now Stratum Reservoir", "role": "Product Line Manager - Laboratories and Sub-Surface Consulting", "Summary": "Recruited to lead a technically strong but unprofitable Geoscience, Fluid PVT (Pressure Volume Temperature) and SCAL (Special Core Analysis) laboratory. Implemented a cultural change and renewed focus on oilfield service fundamentals.", "location": "Calgary, AB, CAN", "startDate": "2017-04-01", "endDate": "2018-06-21"},
-      {"name": "DIKUW Incorporated", "role": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Canada", "startDate": "2019-03-01", "endDate": "2022-01-24"},
+      {"name": "DIKUW Incorporated", "role": "Founder", "Summary": "DIKUW specializes in enabling YOUR TEAM to overcome barriers to success. DIKUW collaborates with a focus on fundamental principles to assess, suggest and implement the optimal solution — all to provide exceptional advice that will transform your business and provide value for years to come.", "location": "Canada", "startDate": "2019-03-01", "endDate": presentDate },
       {"name": "DIKUW Incorporated", "role": "Consulting Engagement to CEDA\'s - Center of Technical Excellence", "Summary": "Coached CEDA’s newly founded Technical Center of Exellence using DIKUW’s proprietary \"Comprehensive Framework for Field Operations Project Management\" and general knowledge of how to deploy technical resources for successful commercial outcomes.", "location": "Edmonton, AB, CAN", "startDate": "2019-03-01", "endDate": "2019-09-15"},
       {"name": "Emerson Automation Solutions", "role": "Team Lead, Customer Solutions Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, AB, CAN", "startDate": "2019-05-01", "endDate": "2019-08-01"},
       {"name": "Emerson Automation Solutions", "role": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, AB, CAN", "startDate": "2019-08-01", "endDate": "2020-02-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, AB, CAN", "startDate": "2020-02-01", "endDate": "2020-10-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Worldwide", "startDate": "2020-10-01", "endDate": "2021-09-30"},
-      {"name": "Proudfoot", "role": "Engagement Manager", "Summary": "At Proudfoot we work shoulder-to-shoulder, engaging your teams to assess, design, implement, and accelerate improvement and transformation, building capabilities at every level along the way, and delivering measurable bottom line impact.", "location": "Worldwide", "startDate": "2022-04-01", "endDate": "2022-12-31"},
+      {"name": "Proudfoot", "role": "Engagement Manager", "Summary": "At Proudfoot we work shoulder-to-shoulder, engaging your teams to assess, design, implement, and accelerate improvement and transformation, building capabilities at every level along the way, and delivering measurable bottom line impact.", "location": "Worldwide", "startDate": "2022-04-01", "endDate": presentDate },
       ]
 }
 
@@ -567,6 +576,8 @@ function calculateDuration(array) {
 
 function prettyDates(date) {
   
+
+
   dateArray = date.split("-");
   dateUgly = new Date(dateArray[0], parseInt(dateArray[1])-1 , dateArray[2]);
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
@@ -575,8 +586,19 @@ function prettyDates(date) {
 
   const datePrettyMonth = monthNames[parseInt(dateUgly.getMonth())];
   const datePrettyYear = dateUgly.getFullYear().toString().substr(-2);
-  const datePretty = `${datePrettyMonth}-${datePrettyYear}`
+  var datePretty = `${datePrettyMonth}-${datePrettyYear}`
+  console.log(datePretty);
+  var today = new Date();
+  const todayPrettyMonth = monthNames[parseInt(today.getMonth())];
+  const todayPrettyYear = today.getFullYear().toString().slice(-2);
+  // const todayPrettyYear = today.getFullYear().toString().slice(-2);
+  console.log(todayPrettyYear);
+  const todayPretty = `${todayPrettyMonth}-${todayPrettyYear}`;
+  console.log(todayPretty);
+  if (todayPretty == datePretty) {datePretty = "Present"};
+
   return datePretty
+
 }
 
 function appendDom (targetObj,data) {
