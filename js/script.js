@@ -181,6 +181,7 @@ const resumeData = {
       {"name": "Emerson Automation Solutions", "role": "Manager, Automation Engineering for Zedi IoT SaaS", "Summary": "", "location": "Calgary, AB, CAN", "startDate": "2019-08-01", "endDate": "2020-02-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, AB, CAN", "startDate": "2020-02-01", "endDate": "2020-10-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Calgary, AB, CAN", "startDate": "2020-10-01", "endDate": "2021-09-30"},
+      {"name": "Proudfoot", "role": "Engagement Manager", "Summary": "Transform organizations through a hands-on approach, industry expertise and tailored solutions to accelerate business performance.", "location": "Calgary, AB, CAN", "startDate": "2020-04-01"},
       ]
 }
 
