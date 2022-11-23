@@ -16,8 +16,6 @@ const resumeData = {
       "narrative": "Adaptable, savvy and professional. I overcome challenges around the world through strategic judgement, clear communication, ensuring stakeholder engagement and perfect execution.",
       "email": "perrin.john@gmail.com",
       "location": {
-        "address": "Bearspaw",
-        "city": "Calgary",
         "countryCode": "Canada"
       },
       "profiles": [
