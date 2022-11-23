@@ -76,26 +76,26 @@ const resumeData = {
         "file": "img/logoAcadiaUniversityEngineeringTranparent.png"
       }
     ],
-    "accreditation": [ 
-      {
-        "role": "Professional Engineer  - Province of Ontario",
-        "entity": "Professional Engineers of Ontario",
-        "narrative": "Practicing Member",
-        "startDate": "2000-10-01",
-        "endDate": presentDate,
-        "url": "https://www.peo.on.ca",
-        "file": "img/logoPEO.png"
-      },
-      {
-        "role": "Professional Engineer - Province of Alberta",
-        "entity": "The Association of Professional Engineers and Geoscientists of Alberta (APEGA)",
-        "narrative": "Practicing Member and former Responsible Member for Emerson",
-        "startDate": "2007-05-01",
-        "endDate": presentDate,
-        "url": "https://www.apega.ca",
-        "file": "img/logoAPEGA.png"
-      }
-    ],
+    // "accreditation": [ 
+    //   {
+    //     "role": "Professional Engineer  - Province of Ontario",
+    //     "entity": "Professional Engineers of Ontario",
+    //     "studyType": "Practicing Member",
+    //     "startDate": "2000-10-01",
+    //     "endDate": presentDate,
+    //     "url": "https://www.peo.on.ca",
+    //     "file": "img/logoPEO.png"
+    //   },
+    //   {
+    //     "role": "Professional Engineer - Province of Alberta",
+    //     "entity": "The Association of Professional Engineers and Geoscientists of Alberta (APEGA)",
+    //     "studyType": "Practicing Member and former Responsible Member for Emerson",
+    //     "startDate": "2007-05-01",
+    //     "endDate": presentDate,
+    //     "url": "https://www.apega.ca",
+    //     "file": "img/logoAPEGA.png"
+    //   }
+    // ],
     "volunteering": [ 
       {
         "role": "Member of Autonomous Systems Advisory Group",
@@ -284,10 +284,10 @@ Object.entries( contentParsed ).forEach( child => {
     case "work":
       // workify(child[1]);
       break
-    case "accreditation":
-        sectionCreator(child); 
-        educationFormatter(child);
-      break  
+    // case "accreditation":
+    //     sectionCreator(child); 
+    //     educationFormatter(child);
+    //   break  
     case "education":
       sectionCreator(child); 
       educationFormatter(child);
