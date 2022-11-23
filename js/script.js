@@ -567,7 +567,7 @@ function prettyDates(date) {
   ];
 
   const datePrettyMonth = monthNames[parseInt(dateUgly.getMonth())];
-  const datePrettyYear = dateUgly.getFullYear();
+  const datePrettyYear = dateUgly.getFullYear().toString().substr(-2);
   const datePretty = `${datePrettyMonth}-${datePrettyYear}`
   return datePretty
 }
