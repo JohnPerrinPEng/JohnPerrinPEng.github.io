@@ -543,6 +543,7 @@ function calculateDuration(array) {
   end = new Date(array.endDate);
   var durationYears;
   var durationMonths;
+  var durationCompose
   var yearS = 's';
   var monthS = 's';
   if ( end.getMonth() < start.getMonth() ) {
@@ -554,8 +555,14 @@ function calculateDuration(array) {
   }
   if (durationYears == 1) {yearS = ''}
   if (durationMonths == 1) {yearS = ''}
+  if ( durationYears == 0 ) {
+     durationCompose = `${durationMonths} month${monthS}`  
+   } else {
+     durationCompose = `${durationYears} year${yearS}, ${durationMonths} month${monthS}`
+   } 
   array.
-  durationPhrase = `${durationYears} year${yearS}, ${durationMonths} month${monthS}`
+  durationPhrase = durationCompose
+  // durationPhrase = `${durationYears} year${yearS}, ${durationMonths} month${monthS}`
 }
 
 function prettyDates(date) {
