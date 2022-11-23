@@ -32,8 +32,8 @@ const resumeData = {
           "image": "img/iconGitHubTransparent.png"
         },
         {
-          "url": "https://www.google.com/maps/place/Bearspaw,+AB/@51.1579186,-114.4174535,10.75z/data=!4m5!3m4!1s0x53716a393a5f46eb:0xc8b883d7efb67147!8m2!3d51.138655!4d-114.3111641",
-          "username": "Calgary, AB, CAN",
+          "url": "https://www.google.com/maps/place/Canada/@56,-96,3z/data=!3m1!4b1!4m5!3m4!1s0x4b0d03d337cc6ad9:0x9968b72aa2438fa5!8m2!3d56.130366!4d-106.346771",
+          "username": "Canada",
           "network": "IRL",
           "image": "img/iconMapLocation.png"
         },
