@@ -209,6 +209,7 @@ const resumeData = {
       {"name": "Emerson Automation Solutions", "role": "Director, Automation Engineering for Zedi IoT SaaS", "Summary": "Achieved an across the board KPI improvement of Automation Engineering Sales, Implementation and and Support", "location": "Calgary, AB, CAN", "startDate": "2020-02-01", "endDate": "2020-10-01"},
       {"name": "Emerson Automation Solutions", "role": "Director, International Business Development for Zedi IoT SaaS", "Summary": "Induce Digital Transformation journeys in potential customers employing our SaaS product in diverse industries including Hydrogen Systems, Renewable Energy, Bulk Product Distribution and Oil & Gas.", "location": "Worldwide", "startDate": "2020-10-01", "endDate": "2021-09-30"},
       {"name": "Proudfoot", "role": "Engagement Manager", "Summary": "At Proudfoot we work shoulder-to-shoulder, engaging your teams to assess, design, implement, and accelerate improvement and transformation, building capabilities at every level along the way, and delivering measurable bottom line impact.", "location": "Worldwide", "startDate": "2022-04-01", "endDate": "2024-06-10" },
+      {"name": "Weir", "role": "Director of Operations for Motion Metrics", "Summary": "Lead operations including Safety Leadership, Sourcing, Manufacturing, Logistics, Service, Support and Training for a divison which employs artificial intelligence and computer vision to improve mine safety and energy efficiency.", "location": "Vancouver", "startDate": "2024-07-01", "endDate": "2025-06-10" },
       ]
 }
 
@@ -246,10 +247,19 @@ var roleHighlights = [
   {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Selected, trained and supported 20 Total IoT SaaS Subject Matter Experts in 12 Months via MS Teams"},
   {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Delivered IoT SaaS Sales Awareness Training to ~1000 Emerson Business Development and Partner Staff  around the world."},
   {"unique":"Director, International Business Development for Zedi IoT SaaSEmerson Automation Solutions2020-10-01", "highlight":"Established meaningful working relationships with Regional Executives and key Business Development resources around the world without the opportunity to meet in person."},
+  {"unique":"Engagement ManagerProudfoot2022-04-01", "highlight":"At a Canadian National Airline I lead a maintenance program transformation, increasing wrench-time by 5% and reducing Aircraft-on-Ground conditions by 15%."},
+  {"unique":"Engagement ManagerProudfoot2022-04-01", "highlight":"At a Canadian Aluminum Smelting and Electric Power Generation Operation, I delivered a transformative Maintenance Work Management program."},
+  {"unique":"Engagement ManagerProudfoot2022-04-01", "highlight":"At a US Gold Mine, I provided analysis leading to USD8.3M of benefits proposed against a USD54.9M Mine Maintenance budget at a US Gold Mine."},
+  {"unique":"Engagement ManagerProudfoot2022-04-01", "highlight":"At a US Industrial Construction Contractor, I delivered strategic analysis and guidance to support SG&A cost control."},
+  {"unique":"Engagement ManagerProudfoot2022-04-01", "highlight":"At a Canadian Port Grain Terminal, I provided detailed recommendations to reduce Cost per ton handled by 45%."},
+  {"unique":"Director of Operations for Motion MetricsWeir2024-07-01", "highlight":"In Safety I achieved a 0 Lost Time Injuries across the entire division."},
+  {"unique":"Director of Operations for Motion MetricsWeir2024-07-01", "highlight":"In Leadership I implemented a culture change predicated on mutual accountablity demonstrating measurable improvement."},
+  {"unique":"Director of Operations for Motion MetricsWeir2024-07-01", "highlight":"In Manufacturing Increased Earned Hour per Paid Hour by 6.5% ."},  
+  {"unique":"Director of Operations for Motion MetricsWeir2024-07-01", "highlight":"In Training I launched a Global Technical & Operational Skills Certification Program, certifying 25+ staff across 4 continents."},
 ];
 
 var logoImages = [
-  {"name": "Weir Motion Metrics", "file": "img/logoWeirMotionMetrics.png", "url": "https://www.weirmotionmetrics.com"},
+  {"name": "Weir Motion Metrics", "file": "img/logoWeir.png", "url": "https://www.motionmetrics.com"},
   {"name": "Proudfoot", "file": "img/logoProudfoot.png", "url": "https://www.proudfoot.com"},
   {"name": "UniversityofAlberta", "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png", "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html"},
   {"name": "AcadiaUniversity", "file": "img/logoAcadiaUniversityEngineeringTranparent.png", "url": "https://engineering.acadiau.ca/Welcome.html"},
