@@ -250,6 +250,7 @@ var roleHighlights = [
 ];
 
 var logoImages = [
+  {"name": "Weir Motion Metrics", "file": "img/logoWeirMotionMetrics.png", "url": "https://www.weirmotionmetrics.com"},
   {"name": "Proudfoot", "file": "img/logoProudfoot.png", "url": "https://www.proudfoot.com"},
   {"name": "UniversityofAlberta", "file": "img/logoUniversityOfAlbertaEngineeringTranparent.png", "url": "https://www.ualberta.ca/engineering/mechanical-engineering/index.html"},
   {"name": "AcadiaUniversity", "file": "img/logoAcadiaUniversityEngineeringTranparent.png", "url": "https://engineering.acadiau.ca/Welcome.html"},
